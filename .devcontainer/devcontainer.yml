@@ -1,0 +1,28 @@
+# GitHub Codespaces configuration for algotrading
+# For more info: https://aka.ms/ghcs/configure
+
+name: algotrading
+services: {}
+
+# Use a Python 3.11 image with common data science tools
+image: mcr.microsoft.com/devcontainers/python:3.11
+
+# Features to install (see https://github.com/devcontainers/features)
+features:
+  - ghcr.io/devcontainers/features/python:1
+  - ghcr.io/devcontainers/features/github-cli:1
+
+# Set up the default Python version
+settings:
+  python.defaultInterpreterPath: /usr/local/bin/python
+
+# Install dependencies automatically
+postCreateCommand: |
+  pip install --upgrade pip
+  pip install -r requirements.txt || true
+
+# Forward commonly used ports (add more if needed)
+forwardPorts: []
+
+# Set default workspace folder
+workspaceFolder: /workspaces/algotrading

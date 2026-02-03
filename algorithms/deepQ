@@ -1,0 +1,128 @@
+# dqn_asianpaint.py
+# Requirements: tensorflow>=2.10, pandas, scikit-learn, numpy
+# Usage (local or Colab):
+#   pip install -U tensorflow pandas scikit-learn
+#   python dqn_asianpaint.py --input ASIANPAINT_1d_features.json
+
+import argparse, random
+from collections import deque
+import numpy as np, pandas as pd
+from sklearn.preprocessing import StandardScaler
+import tensorflow as tf
+from tensorflow.keras import layers, Model, optimizers
+
+# ----------------- Environment -----------------
+class DailyEnv:
+    def __init__(self, df, feats):
+        self.df = df.reset_index(drop=True)
+        self.feats = feats
+        self.n = len(df)
+        self.i = 0
+        self.df['next_close'] = self.df['Close'].shift(-1)
+        self.df['up'] = (self.df['next_close'] > self.df['Close']).astype(int)
+
+    def reset(self, start=0):
+        self.i = start
+        return self.state()
+
+    def state(self):
+        return self.df.loc[self.i, self.feats].values.astype(float)
+
+    def step(self, a):
+        # a: 0=Down, 1=Up
+        if self.i >= self.n-1:
+            return self.state(), 0.0, True
+        reward = 1.0 if a == self.df.loc[self.i, 'up'] else 0.0
+        self.i += 1
+        return self.state(), reward, self.i >= self.n-1
+
+# --------------- Q-Network ---------------------
+def build_q_net(d, actions):
+    x_in = layers.Input(shape=(d,))
+    x = layers.Dense(128, activation='relu')(x_in)
+    x = layers.Dense(64, activation='relu')(x)
+    out = layers.Dense(actions, activation='linear')(x)
+    m = Model(x_in, out)
+    m.compile(optimizer=optimizers.Adam(1e-3), loss='mse')
+    return m
+
+# --------------- Replay Buffer -----------------
+class Buffer:
+    def __init__(self, cap=200_000): self.buf = deque(maxlen=cap)
+    def add(self,s,a,r,ns,d): self.buf.append((s,a,r,ns,d))
+    def sample(self,b):
+        batch = random.sample(self.buf, b)
+        s,a,r,ns,d = map(np.vstack, zip(*batch))
+        return s, a.flatten(), r.flatten(), ns, d.flatten()
+    def __len__(self): return len(self.buf)
+
+# --------------- Training ----------------------
+def train(env, feats, epochs=60, batch=256, gamma=0.9):
+    q = build_q_net(len(feats), 2)
+    tgt = build_q_net(len(feats), 2)
+    tgt.set_weights(q.get_weights())
+    buf = Buffer()
+
+    # fill buffer with random experience
+    for st in range(env.n-1):
+        s = env.reset(st)
+        done = False
+        while not done:
+            a = random.choice([0,1])
+            ns,r,done = env.step(a)
+            buf.add(s.reshape(1,-1), a, r, ns.reshape(1,-1), done)
+            s = ns
+
+    for e in range(epochs):
+        if len(buf) < batch: continue
+        for _ in range(100):     # 100 gradient steps/epoch
+            S,A,R,NS,D = buf.sample(batch)
+            q_s = q.predict(S, verbose=0)
+            q_ns = tgt.predict(NS, verbose=0)
+            y = q_s.copy()
+            for i in range(batch):
+                y[i, A[i]] = R[i] + (0 if D[i] else gamma*np.max(q_ns[i]))
+            q.train_on_batch(S, y)
+        if (e+1)%5==0: tgt.set_weights(q.get_weights())
+        if (e+1)%10==0: print(f"Epoch {e+1}/{epochs}")
+    return q
+
+# --------------- Prediction --------------------
+def forecast(q, scaler, last_vec, feats, days=5):
+    # hold features constant for horizon
+    from pandas.tseries.offsets import BDay
+    last_date = df['Date'].max()
+    out = []
+    for i in range(days):
+        qv = q.predict(last_vec.reshape(1,-1), verbose=0)[0]
+        p = np.exp(qv - qv.max()); p = p/p.sum()
+        out.append({
+            "Date": (last_date + BDay(i+1)).date(),
+            "P(Down)": float(p[0]),
+            "P(Up)": float(p[1]),
+            "Pred": "Up" if p[1]>p[0] else "Down"
+        })
+    return pd.DataFrame(out)
+
+# --------------- Main --------------------------
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--input", default="ASIANPAINT_1d_features.json")
+    ap.add_argument("--epochs", type=int, default=60)
+    args = ap.parse_args()
+
+    df = pd.read_json(args.input)
+    df['Date'] = pd.to_datetime(df['Date'])
+    df.sort_values('Date', inplace=True)
+
+    feats = [c for c in df.columns if np.issubdtype(df[c].dtype,np.number)
+             and c not in {"next_close","up","Date"}]
+    scaler = StandardScaler()
+    df[feats] = scaler.fit_transform(df[feats])
+
+    env = DailyEnv(df, feats)
+    qnet = train(env, feats, epochs=args.epochs)
+
+    last = scaler.transform(df[feats].iloc[[-1]])
+    print("\nNext 5-day Direction Probabilities:")
+    print(forecast(qnet, scaler, last, feats))

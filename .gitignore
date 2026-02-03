@@ -1,0 +1,22 @@
+# Ignore large data, cache, and environment folders
+analytics_cache/
+ATM_OptionChainJSON/
+EGARCH_Models/
+EGARCH_Results/
+Engineered_data/
+Images/
+Most_Active_Underlying/
+Nifty_Fifty/
+OptionChainJSON/
+OptionChainJSON_Enriched/
+results/
+Underlying_data_kite/
+Underlying_data_vbt/
+.venv313/
+algorithms/SOM_Image/
+# Created by venv; see https://docs.python.org/3/library/venv.html
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

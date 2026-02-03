@@ -1,0 +1,30 @@
+# Codespaces/Devcontainer setup for algotrading
+
+# Python
+python
+python-dotenv
+
+# Data science
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+notebook
+
+# Trading/Finance
+kiteconnect
+vectorbt
+yfinance
+
+# Linting/Dev tools
+black
+flake8
+isort
+
+# PDF/reporting
+reportlab
+
+# Add any other dependencies from requirements.txt

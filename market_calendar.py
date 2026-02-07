@@ -22,20 +22,31 @@ REGIONS = {
     }
 }
 
+# Region-specific importance level defaults
+REGION_IMPORTANCE_DEFAULTS = {
+    'Americas': ['high'],
+    'Europe': ['high'],
+    'India': ['high', 'medium'],
+    'China': ['high'],
+    'Japan': ['high']
+}
+
 
 def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China', 'Japan'], 
-                                 importance_levels=['high', 'medium'], 
+                                 importance_levels=None, 
                                  days_back=1, 
                                  days_forward=7):
     """
-    Fetch economic calendar for multiple regions.
+    Fetch economic calendar for multiple regions with region-specific importance defaults.
     
     Parameters:
     -----------
     regions : list
         List of regions/countries: 'Americas', 'Europe', 'India', 'China', 'Japan'
-    importance_levels : list
-        Filter by importance: 'high', 'medium', 'low'
+    importance_levels : dict or list, optional
+        If dict: {'Americas': ['high'], 'India': ['high', 'medium'], ...}
+        If list: Applied to all regions
+        If None: Uses region-specific defaults
     days_back : int
         Days to look back from today
     days_forward : int
@@ -48,11 +59,39 @@ def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China',
     from_date = pm.now().subtract(days=days_back).strftime('%d/%m/%Y')
     to_date = pm.now().add(days=days_forward).strftime('%d/%m/%Y')
     
+    # Set importance levels: use region-specific defaults if not provided
+    if importance_levels is None:
+        region_importance = REGION_IMPORTANCE_DEFAULTS.copy()
+    elif isinstance(importance_levels, dict):
+        # Merge with defaults for regions not specified
+        region_importance = REGION_IMPORTANCE_DEFAULTS.copy()
+        region_importance.update(importance_levels)
+    else:
+        # Apply same importance levels to all regions
+        region_importance = {region: importance_levels for region in regions}
+    
     logger.info(f"Fetching economic calendar from {from_date} to {to_date}")
+    logger.info(f"Region-specific importance levels: {region_importance}")
     
     try:
-        # Fetch full calendar
-        calendar = investpy.news.economic_calendar(time_zone=None, from_date=from_date, to_date=to_date)
+        # Fetch full calendar with retry
+        max_retries = 2
+        calendar = None
+        for attempt in range(max_retries):
+            try:
+                calendar = investpy.news.economic_calendar(time_zone=None, from_date=from_date, to_date=to_date)
+                break
+            except Exception as e:
+                logger.warning(f"Attempt {attempt + 1} failed: {str(e)[:100]}")
+                if attempt == max_retries - 1:
+                    logger.error(f"Failed to fetch economic calendar after {max_retries} retries")
+                    raise
+                import time
+                time.sleep(1)  # Wait before retry
+        
+        if calendar is None or calendar.empty:
+            logger.warning("No economic calendar data returned")
+            return {}
         calendar = calendar.drop(columns=['id', 'time'], errors='ignore')
         
         # Collect all currencies for the selected regions
@@ -71,39 +110,57 @@ def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China',
         
         all_currencies = list(set(all_currencies))  # Remove duplicates
         
-        # Filter by importance and currencies
-        df = calendar.query(
-            "importance in @importance_levels & (currency in @all_currencies or zone=='india')"
+        # Collect all importance levels needed
+        all_importance_levels = list(set([item for sublist in region_importance.values() for item in sublist]))
+        
+        # Filter by importance and currencies (handle None importance values)
+        df_filtered = calendar.copy()
+        df_filtered = df_filtered[df_filtered['importance'].notna()]  # Remove None values
+        df_filtered = df_filtered[df_filtered['currency'].notna()]  # Remove None currencies
+        df = df_filtered.query(
+            "importance in @all_importance_levels & (currency in @all_currencies or zone=='india')"
         ).reset_index(drop=True)
         
-        # Format the dataframe
+        # Format the dataframe - but keep lowercase for query operations
         for col in df.select_dtypes(include=['object']).columns:
             df[col] = df[col].str.title()
         df['currency'] = df['currency'].str.upper()
-        df.columns = [col.title() for col in df.columns]
         
-        # Split by region
+        # Split by region with region-specific importance filtering
         region_dfs = {}
         for region in regions:
+            region_importance_list = region_importance.get(region, ['high'])
+            # Convert to title case for comparison
+            region_importance_list_title = [x.title() for x in region_importance_list]
+            
             if region == 'Americas':
                 currencies = REGIONS['Americas']
+                region_df = df[df['currency'].isin(currencies) & df['importance'].isin(region_importance_list_title)].copy()
             elif region == 'Europe':
                 currencies = REGIONS['Europe']
+                region_df = df[df['currency'].isin(currencies) & df['importance'].isin(region_importance_list_title)].copy()
             elif region == 'India':
                 currencies = REGIONS['Asia']['India']
-                region_df = df.query("Currency in @currencies or Zone=='India'").copy()
-                region_dfs[region] = region_df.sort_values('Date').reset_index(drop=True)
-                continue
+                region_df = df[((df['currency'].isin(currencies) | df['zone'].str.title() == 'India')) & df['importance'].isin(region_importance_list_title)].copy()
             elif region == 'China':
                 currencies = REGIONS['Asia']['China']
+                region_df = df[df['currency'].isin(currencies) & df['importance'].isin(region_importance_list_title)].copy()
             elif region == 'Japan':
                 currencies = REGIONS['Asia']['Japan']
+                region_df = df[df['currency'].isin(currencies) & df['importance'].isin(region_importance_list_title)].copy()
+            else:
+                region_df = pd.DataFrame()
             
-            region_df = df.query("Currency in @currencies").copy()
-            region_dfs[region] = region_df.sort_values('Date').reset_index(drop=True)
+            region_dfs[region] = region_df.sort_values('date').reset_index(drop=True)
         
-        # Create a combined view
-        region_dfs['All_Regions'] = df.sort_values('Date').reset_index(drop=True)
+        # Format column names for output
+        for region_df in region_dfs.values():
+            if not region_df.empty:
+                region_df.columns = [col.title() for col in region_df.columns]
+        
+        # Create a combined view with only high importance events for consistency
+        combined_importance = ['high']
+        region_dfs['All_Regions'] = df.query("Importance in @combined_importance").sort_values('Date').reset_index(drop=True)
         
         logger.info(f"Successfully fetched calendar for {len(regions)} regions")
         return region_dfs
@@ -137,10 +194,11 @@ def economic_calendar():
 
 
 def print_regional_calendar(regions=['Americas', 'Europe', 'India', 'China', 'Japan'], 
-                           importance_levels=['high'], 
+                           importance_levels=None, 
                            days_forward=7):
     """
     Fetch and print economic calendar for specified regions.
+    Uses region-specific importance defaults if not specified.
     """
     calendars = economic_calendar_by_region(
         regions=regions, 
@@ -156,16 +214,27 @@ def print_regional_calendar(regions=['Americas', 'Europe', 'India', 'China', 'Ja
     print("GLOBAL ECONOMIC CALENDAR".center(100))
     print("="*100)
     
+    # Get actual importance levels used
+    if importance_levels is None:
+        actual_importance = REGION_IMPORTANCE_DEFAULTS
+    elif isinstance(importance_levels, dict):
+        actual_importance = REGION_IMPORTANCE_DEFAULTS.copy()
+        actual_importance.update(importance_levels)
+    else:
+        actual_importance = {region: importance_levels for region in regions}
+    
     for region, df in calendars.items():
         if region == 'All_Regions':
             continue
             
+        region_importance = actual_importance.get(region, ['high'])
         print(f"\n{'─'*100}")
         print(f"📊 {region.upper()}".center(100))
+        print(f"Importance: {', '.join(region_importance).title()}".center(100))
         print(f"{'─'*100}")
         
         if df.empty:
-            print(f"  No {importance_levels} importance events scheduled for {region}")
+            print(f"  No {region_importance} importance events scheduled for {region}")
         else:
             print(f"\n{len(df)} events scheduled:\n")
             # Display key columns
@@ -246,7 +315,8 @@ def stock_earnings_calendar(tickers):
     
     return df
 
-stock_earnings_calendar(['NIFTY', 'BANKNIFTY', 'RELIANCE', 'TCS', 'INFY'])
+# Commented out - call explicitly when needed
+# stock_earnings_calendar(['NIFTY', 'BANKNIFTY', 'RELIANCE', 'TCS', 'INFY'])
 
 # The below code fetches the latest news articles related to Nifty50 stocks using the NewsAPI.
 # It requires an API key from NewsAPI or a similar service. The code fetches the latest news articles and prints the title, source, publication date, and URL of each article.

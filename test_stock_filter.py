@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 from stock_filter_agent import (
+
     calculate_sma_slope,
     classify_slope,
     detect_slope_direction_change,
@@ -141,6 +142,8 @@ def test_full_analysis():
         
         print(f"\n📊 Overall: {result['criteria_met_count']}/3 criteria met")
         print(f"   All criteria: {'✓ PASS' if result['meets_all_criteria'] else '✗ FAIL'}")
+        print(f"   Any two criteria: {'✓ PASS' if result['meets_any_two_criteria'] else '✗ FAIL'}")
+        print(f"\n🚦 SIGNAL: {result['signal']}")
 
 if __name__ == "__main__":
     print("\n" + "="*80)

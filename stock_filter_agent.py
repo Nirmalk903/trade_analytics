@@ -339,6 +339,12 @@ def analyze_stock(df: pd.DataFrame, symbol: str, sma_period: int = 10,
         meets_all = last_slope_changed and (last_cusum == 1) and current_price_above_sma
         criteria_count = sum([last_slope_changed, last_cusum == 1, current_price_above_sma])
         
+        # Generate signal if any two criteria are met
+        meets_any_two = criteria_count >= 2
+        
+        # Determine signal type
+        signal = "BUY" if meets_any_two else "NONE"
+        
         return {
             "symbol": symbol,
             "timestamp": str(df.index[-1]),
@@ -361,7 +367,9 @@ def analyze_stock(df: pd.DataFrame, symbol: str, sma_period: int = 10,
                 "sma": current_sma,
             },
             "meets_all_criteria": meets_all,
-            "criteria_met_count": criteria_count
+            "meets_any_two_criteria": meets_any_two,
+            "criteria_met_count": criteria_count,
+            "signal": signal
         }
     
     except Exception as e:
@@ -404,7 +412,9 @@ def filter_stocks(symbols: List[str], data_source: str = "engineered",
                 "symbol": symbol,
                 "error": f"Data source '{data_source}' not available",
                 "meets_all_criteria": False,
-                "criteria_met_count": 0
+                "meets_any_two_criteria": False,
+                "criteria_met_count": 0,
+                "signal": "NONE"
             })
             continue
         
@@ -413,7 +423,9 @@ def filter_stocks(symbols: List[str], data_source: str = "engineered",
                 "symbol": symbol,
                 "error": "No data available",
                 "meets_all_criteria": False,
-                "criteria_met_count": 0
+                "meets_any_two_criteria": False,
+                "criteria_met_count": 0,
+                "signal": "NONE"
             })
             continue
         
@@ -425,15 +437,18 @@ def filter_stocks(symbols: List[str], data_source: str = "engineered",
                 "symbol": symbol,
                 "error": "Analysis failed",
                 "meets_all_criteria": False,
-                "criteria_met_count": 0
+                "meets_any_two_criteria": False,
+                "criteria_met_count": 0,
+                "signal": "NONE"
             })
             continue
         
         all_results.append(analysis)
         
-        if analysis["meets_all_criteria"]:
+        # Use any two criteria met for filtering
+        if analysis["meets_any_two_criteria"]:
             filtered_stocks.append(symbol)
-            logger.info(f"  ✓ PASS")
+            logger.info(f"  ✓ PASS (Signal: {analysis['signal']})")
         else:
             logger.debug(f"  ✗ ({analysis['criteria_met_count']}/3)")
     
@@ -475,11 +490,14 @@ def print_summary(summary: Dict):
     print(f"Pass Rate: {summary['pass_rate']}")
     
     if summary['filtered_symbols']:
-        print(f"\n✓ FILTERED STOCKS (Meeting all 3 criteria):")
+        print(f"\n✓ FILTERED STOCKS (Meeting any 2 of 3 criteria):")
         for symbol in summary['filtered_symbols']:
-            print(f"  • {symbol}")
+            # Find the result for this symbol to get the signal
+            symbol_result = next((r for r in summary['details'] if r['symbol'] == symbol), None)
+            signal = symbol_result.get('signal', 'NONE') if symbol_result else 'NONE'
+            print(f"  • {symbol} [Signal: {signal}]")
     else:
-        print(f"\nNo stocks met all criteria.")
+        print(f"\nNo stocks met at least 2 criteria.")
     
     print("\n" + "-"*80)
     print("DETAILED ANALYSIS".center(80))
@@ -490,8 +508,10 @@ def print_summary(summary: Dict):
     for result in summary['details']:
         symbol = result['symbol']
         meets_all = "✓" if result.get('meets_all_criteria', False) else "✗"
+        meets_two = "✓" if result.get('meets_any_two_criteria', False) else "✗"
+        signal = result.get('signal', 'NONE')
         
-        print(f"\n{meets_all} {symbol}")
+        print(f"\n{meets_two} {symbol} [Signal: {signal}]")
         
         # Check if this is an error result
         if 'error' in result:
@@ -502,7 +522,7 @@ def print_summary(summary: Dict):
             criteria_met = result['criteria_met_count']
             
             print(f"   Price: {price:.2f} | SMA(10): {sma:.2f}")
-            print(f"   Criteria Met: {criteria_met}/3")
+            print(f"   Criteria Met: {criteria_met}/3 (All: {meets_all}, Any 2: {meets_two})")
             
             # Show criterion details
             c1 = "✓" if result['criterion_1_slope_change']['meets'] else "✗"

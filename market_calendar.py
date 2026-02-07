@@ -26,7 +26,7 @@ REGIONS = {
 REGION_IMPORTANCE_DEFAULTS = {
     'Americas': ['high'],
     'Europe': ['high'],
-    'India': ['high', 'medium'],
+    'India': ['high', 'medium', 'low'],  # Keep all importance levels for India
     'China': ['high'],
     'Japan': ['high']
 }

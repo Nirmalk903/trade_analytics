@@ -10,6 +10,14 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# Try to import the multi-source fallback fetcher
+try:
+    from economic_calendar_fetcher import EconomicCalendarFetcher, get_economic_calendar
+    HAS_FALLBACK_FETCHER = True
+except ImportError:
+    HAS_FALLBACK_FETCHER = False
+    logger.warning("economic_calendar_fetcher not available. Using investpy only.")
+
 
 # Regional mapping for economic calendar
 REGIONS = {
@@ -168,6 +176,65 @@ def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China',
     except Exception as e:
         logger.error(f"Error fetching economic calendar: {e}")
         return {}
+
+
+def economic_calendar_with_fallback(regions=['Americas', 'Europe', 'India', 'China', 'Japan'],
+                                    importance_levels=None,
+                                    days_back=1,
+                                    days_forward=7):
+    """
+    Fetch economic calendar with automatic multi-source fallback.
+    
+    Tries sources in order:
+    1. investpy library (original method)
+    2. Trading Economics API (if key configured)
+    3. Investing.com web scraping
+    4. FRED API (US only)
+    
+    Parameters:
+    -----------
+    regions : list
+        List of regions to fetch
+    importance_levels : dict or list
+        Importance level filters
+    days_back : int
+        Days to look back
+    days_forward : int
+        Days to look forward
+        
+    Returns:
+    --------
+    dict : Dictionary with region-wise DataFrames
+    """
+    from_date = pm.now().subtract(days=days_back).strftime('%Y-%m-%d')
+    to_date = pm.now().add(days=days_forward).strftime('%Y-%m-%d')
+    
+    logger.info("Attempting economic calendar fetch with fallback approach")
+    
+    # Try original investpy method first
+    try:
+        logger.info("Attempting: investpy library")
+        result = economic_calendar_by_region(regions, importance_levels, days_back, days_forward)
+        if result and any(not df.empty for df in result.values()):
+            logger.info("✓ Successfully fetched from investpy")
+            return result
+    except Exception as e:
+        logger.warning(f"investpy failed: {str(e)[:100]}")
+    
+    # Try multi-source fallback if available
+    if HAS_FALLBACK_FETCHER:
+        try:
+            logger.info("Attempting: Multi-source fallback (Trading Economics, Investing.com, FRED)")
+            fetcher = EconomicCalendarFetcher()
+            result = fetcher.fetch(from_date, to_date, regions)
+            if result and any(not df.empty for df in result.values()):
+                logger.info("✓ Successfully fetched from fallback sources")
+                return result
+        except Exception as e:
+            logger.warning(f"Fallback sources failed: {str(e)[:100]}")
+    
+    logger.error("All data sources exhausted. No economic calendar data available.")
+    return {}
 
 
 def economic_calendar():

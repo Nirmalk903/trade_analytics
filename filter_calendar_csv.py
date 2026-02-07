@@ -15,20 +15,28 @@ regions_keep_all = ['India']
 
 calendar_dir = 'results/economic_calendar'
 
+# Create directory if it doesn't exist
+Path(calendar_dir).mkdir(parents=True, exist_ok=True)
+
 print("\n" + "="*80)
 print("FILTERING ECONOMIC CALENDAR CSV FILES".center(80))
 print("="*80 + "\n")
 
 # Process each region CSV
 for region in regions_high_only + regions_keep_all:
-    # Find the CSV file for this region
-    files = sorted(Path(calendar_dir).glob(f'{region}_calendar_*.csv'))
-    if not files:
+    # Find the CSV file for this region (with or without timestamp)
+    files_with_timestamp = sorted(Path(calendar_dir).glob(f'{region}_calendar_*.csv'))
+    files_without_timestamp = sorted(Path(calendar_dir).glob(f'{region}_calendar.csv'))
+    
+    # Use the most recent timestamped file, or the non-timestamped file
+    if files_with_timestamp:
+        file_path = files_with_timestamp[-1]
+    elif files_without_timestamp:
+        file_path = files_without_timestamp[0]
+    else:
         print(f"⚠ No CSV file found for {region}")
         continue
     
-    # Use the most recent file
-    file_path = files[-1]
     df = pd.read_csv(file_path)
     
     if region in regions_high_only:
@@ -40,8 +48,8 @@ for region in regions_high_only + regions_keep_all:
         df_filtered = df.copy()
         print(f"✓ {region}: {len(df)} events (All importance levels)")
     
-    # Save with new timestamp
-    new_filename = f"{calendar_dir}/{region}_calendar_{pm.now().format('YYYY-MM-DD_HHmmss')}.csv"
+    # Save without timestamp
+    new_filename = f"{calendar_dir}/{region}_calendar.csv"
     df_filtered.to_csv(new_filename, index=False)
     print(f"  → Saved: {Path(new_filename).name}\n")
 

@@ -1,0 +1,1238 @@
+{
+  "timestamp": "2026-02-06T00:12:22.215369",
+  "data_source": "engineered",
+  "parameters": {
+    "sma_period": 10,
+    "slope_lookback": 1
+  },
+  "symbols_analyzed": 51,
+  "stocks_meeting_all_criteria": 0,
+  "filtered_symbols": [],
+  "details": [
+    {
+      "symbol": "NIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 25642.80078125,
+      "sma_10": 25383.100390625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 48.53007812500073,
+        "current_slope_classified": 1,
+        "previous_slope": 54.349999999998545,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 25642.80078125,
+        "sma": 25383.100390625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 60063.6484375,
+      "sma_10": 59500.78515625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 126.33476562499709,
+        "current_slope_classified": 1,
+        "previous_slope": 83.39492187500582,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 60063.6484375,
+        "sma": 59500.78515625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "INFY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1520.1999511719,
+      "sma_10": 1632.5400024414098,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -13.42000732422025,
+        "current_slope_classified": -1,
+        "previous_slope": -12.309997558599889,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1520.1999511719,
+        "sma": 1632.5400024414098
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TRENT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 4131.2998046875,
+      "sma_10": 3851.56999511718,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 36.689990234369816,
+        "current_slope_classified": 1,
+        "previous_slope": 17.65000000000009,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": true,
+        "cusum_value": 1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 4131.2998046875,
+        "sma": 3851.56999511718
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 2
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1992.4000244141,
+      "sma_10": 1983.55000000002,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.36999511717999667,
+        "current_slope_classified": -1,
+        "previous_slope": 2.9800048828101353,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1992.4000244141,
+        "sma": 1983.55000000002
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "SBIN",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1073.5,
+      "sma_10": 1057.24498291017,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.4849975585900665,
+        "current_slope_classified": 1,
+        "previous_slope": 3.1799926757796584,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1073.5,
+        "sma": 1057.24498291017
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "AXISBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1330.5999755859,
+      "sma_10": 1325.95,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.569995117180042,
+        "current_slope_classified": 1,
+        "previous_slope": 4.519995117189865,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1330.5999755859,
+        "sma": 1325.95
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 408.75,
+      "sma_10": 413.53999938965,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -1.2850006103499823,
+        "current_slope_classified": -1,
+        "previous_slope": -1.1449981689499396,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 408.75,
+        "sma": 413.53999938965
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ICICIBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1396.5,
+      "sma_10": 1370.40000000001,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.75,
+        "current_slope_classified": 1,
+        "previous_slope": 3.2599975585999346,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1396.5,
+        "sma": 1370.40000000001
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TCS",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2991.5,
+      "sma_10": 3132.48000488281,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -13.110009765619907,
+        "current_slope_classified": -1,
+        "previous_slope": -10.319995117190047,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 2991.5,
+        "sma": 3132.48000488281
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "RELIANCE",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1443.4000244141,
+      "sma_10": 1407.99000244141,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 3.8800048828202307,
+        "current_slope_classified": 1,
+        "previous_slope": 6.2800048828098625,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1443.4000244141,
+        "sma": 1407.99000244141
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TATASTEEL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 197.7599945068,
+      "sma_10": 193.28899993896,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 1.3349990844699846,
+        "current_slope_classified": 1,
+        "previous_slope": 1.1839996337900232,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 197.7599945068,
+        "sma": 193.28899993896
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HDFCBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 949.700012207,
+      "sma_10": 933.82499999998,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.9350036621099207,
+        "current_slope_classified": 1,
+        "previous_slope": 2.1899963378900793,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 949.700012207,
+        "sma": 933.82499999998
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HINDALCO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 935.450012207,
+      "sma_10": 962.76500244139,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.375,
+        "current_slope_classified": -1,
+        "previous_slope": 3.6850036621100344,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 935.450012207,
+        "sma": 962.76500244139
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BEL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 432.8999938965,
+      "sma_10": 434.06000366210003,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 3.025000000000034,
+        "current_slope_classified": 1,
+        "previous_slope": 2.9850006103500277,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 432.8999938965,
+        "sma": 434.06000366210003
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ETERNAL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 286.8500061035,
+      "sma_10": 273.71499938964996,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 0.3350006103499368,
+        "current_slope_classified": 1,
+        "previous_slope": 2.4549987793000128,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 286.8500061035,
+        "sma": 273.71499938964996
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1570.1999511719,
+      "sma_10": 1437.80001220704,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 19.159997558600253,
+        "current_slope_classified": 1,
+        "previous_slope": 20.03000488281964,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1570.1999511719,
+        "sma": 1437.80001220704
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 964.75,
+      "sma_10": 938.1700012207,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.849999999999909,
+        "current_slope_classified": 1,
+        "previous_slope": 3.0099975585999346,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 964.75,
+        "sma": 938.1700012207
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "MARUTI",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 15059.0,
+      "sma_10": 14975.3,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -71.10000000000036,
+        "current_slope_classified": -1,
+        "previous_slope": -80.80000000000109,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 15059.0,
+        "sma": 14975.3
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "NTPC",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 367.0,
+      "sma_10": 352.92000122070004,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.8299987793000696,
+        "current_slope_classified": 1,
+        "previous_slope": 2.8500000000000227,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 367.0,
+        "sma": 352.92000122070004
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "WIPRO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 233.3899993896,
+      "sma_10": 236.75633697510997,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.01310729981000236,
+        "current_slope_classified": -1,
+        "previous_slope": -0.052224731439991956,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 233.3899993896,
+        "sma": 236.75633697510997
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 992.0,
+      "sma_10": 1002.4999938965,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 0.599999999999909,
+        "current_slope_classified": 1,
+        "previous_slope": 1.1299987792999673,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 992.0,
+        "sma": 1002.4999938965
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "M&M",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 3572.0,
+      "sma_10": 3491.3099609375195,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 1.869995117189319,
+        "current_slope_classified": 1,
+        "previous_slope": 1.650000000000091,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 3572.0,
+        "sma": 3491.3099609375195
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ADANIENT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2236.6000976562,
+      "sma_10": 2060.7199951171997,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 20.440014648429724,
+        "current_slope_classified": 1,
+        "previous_slope": 17.30998535156982,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 2236.6000976562,
+        "sma": 2060.7199951171997
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "JIOFIN",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 269.950012207,
+      "sma_10": 258.16999969482,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 0.6700012206999872,
+        "current_slope_classified": 1,
+        "previous_slope": 0.25,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 269.950012207,
+        "sma": 258.16999969482
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 5766.0,
+      "sma_10": 5588.25,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 22.75,
+        "current_slope_classified": 1,
+        "previous_slope": 27.100000000000364,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 5766.0,
+        "sma": 5588.25
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2354.3999023438,
+      "sma_10": 2375.6300048828098,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -1.3600097656203616,
+        "current_slope_classified": -1,
+        "previous_slope": -0.8100097656201797,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 2354.3999023438,
+        "sma": 2375.6300048828098
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HCLTECH",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1610.0,
+      "sma_10": 1688.09999999998,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -7.25,
+        "current_slope_classified": -1,
+        "previous_slope": -6.550000000000182,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1610.0,
+        "sma": 1688.09999999998
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "LT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 4063.3000488281,
+      "sma_10": 3909.51003417967,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 29.680004882810408,
+        "current_slope_classified": 1,
+        "previous_slope": 27.66000976561918,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 4063.3000488281,
+        "sma": 3909.51003417967
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ITC",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 310.200012207,
+      "sma_10": 313.1646697998,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.7883697509800527,
+        "current_slope_classified": -1,
+        "previous_slope": -0.5751892089899684,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 310.200012207,
+        "sma": 313.1646697998
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 914.4000244141,
+      "sma_10": 905.42000732422,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 0.7250000000000227,
+        "current_slope_classified": 1,
+        "previous_slope": 1.6149963378900338,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 914.4000244141,
+        "sma": 905.42000732422
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ONGC",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 269.200012207,
+      "sma_10": 259.74600067137,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.6830017089799867,
+        "current_slope_classified": 1,
+        "previous_slope": 2.656001281739975,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 269.200012207,
+        "sma": 259.74600067137
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TECHM",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1646.1999511719,
+      "sma_10": 1714.0,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -4.0499999999999545,
+        "current_slope_classified": -1,
+        "previous_slope": -3.3199951171900466,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1646.1999511719,
+        "sma": 1714.0
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1239.8000488281,
+      "sma_10": 1214.3599975586098,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 6.520007324219705,
+        "current_slope_classified": 1,
+        "previous_slope": 6.819995117190047,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": true,
+        "cusum_value": 1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1239.8000488281,
+        "sma": 1214.3599975586098
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 2
+    },
+    {
+      "symbol": "TITAN",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 4097.6000976562,
+      "sma_10": 4019.3100097656197,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 1.8400146484300421,
+        "current_slope_classified": 1,
+        "previous_slope": 6.849999999999909,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 4097.6000976562,
+        "sma": 4019.3100097656197
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1702.5999755859,
+      "sma_10": 1634.2104858398402,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 10.010937500000182,
+        "current_slope_classified": 1,
+        "previous_slope": 9.001525878910115,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1702.5999755859,
+        "sma": 1634.2104858398402
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2432.1000976562,
+      "sma_10": 2509.9200195312396,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -22.90000000000009,
+        "current_slope_classified": -1,
+        "previous_slope": -22.290014648430315,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 2432.1000976562,
+        "sma": 2509.9200195312396
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "EICHERMOT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 7209.5,
+      "sma_10": 7112.4,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 6.949999999999818,
+        "current_slope_classified": 1,
+        "previous_slope": 10.399999999999636,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 7209.5,
+        "sma": 7112.4
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "COALINDIA",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 431.8500061035,
+      "sma_10": 432.46999816895004,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 1.7800018310500718,
+        "current_slope_classified": 1,
+        "previous_slope": 1.9600006103499936,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 431.8500061035,
+        "sma": 432.46999816895004
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "POWERGRID",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 289.3500061035,
+      "sma_10": 267.68999938965,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 3.3550003051699377,
+        "current_slope_classified": 1,
+        "previous_slope": 3.53499908447003,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 289.3500061035,
+        "sma": 267.68999938965
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2000.0999755859,
+      "sma_10": 1966.32998046873,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.01999511717986,
+        "current_slope_classified": 1,
+        "previous_slope": 6.0900024413999745,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 2000.0999755859,
+        "sma": 1966.32998046873
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "GRASIM",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2838.8000488281,
+      "sma_10": 2815.98000488281,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 10.319995117190047,
+        "current_slope_classified": 1,
+        "previous_slope": 13.129980468760095,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 2838.8000488281,
+        "sma": 2815.98000488281
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 9647.0,
+      "sma_10": 9519.65,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 46.79999999999927,
+        "current_slope_classified": 1,
+        "previous_slope": 45.899999999999636,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 9647.0,
+        "sma": 9519.65
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 12773.0,
+      "sma_10": 12620.4,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 54.19999999999891,
+        "current_slope_classified": 1,
+        "previous_slope": 74.70000000000073,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 12773.0,
+        "sma": 12620.4
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "DRREDDY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1244.9000244141,
+      "sma_10": 1224.5400024414098,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 8.770007324219705,
+        "current_slope_classified": 1,
+        "previous_slope": 7.350000000000136,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": true,
+        "cusum_value": 1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1244.9000244141,
+        "sma": 1224.5400024414098
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 2
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 7122.0,
+      "sma_10": 6929.25,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 29.550000000000182,
+        "current_slope_classified": 1,
+        "previous_slope": 20.349999999999454,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 7122.0,
+        "sma": 6929.25
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 720.700012207,
+      "sma_10": 722.47999267577,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.36499633789003383,
+        "current_slope_classified": -1,
+        "previous_slope": -0.9599975585899756,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 720.700012207,
+        "sma": 722.47999267577
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TATACONSUM",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1159.5,
+      "sma_10": 1148.2300048828301,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.40999755859002107,
+        "current_slope_classified": -1,
+        "previous_slope": -3.199999999999818,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1159.5,
+        "sma": 1148.2300048828301
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "SBILIFE",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2017.8000488281,
+      "sma_10": 2017.33999023437,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -3.7599853515700943,
+        "current_slope_classified": -1,
+        "previous_slope": -0.7400146484299057,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 2017.8000488281,
+        "sma": 2017.33999023437
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "NESTLEIND",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1303.5,
+      "sma_10": 1303.8800170898498,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.0300048828098625,
+        "current_slope_classified": 1,
+        "previous_slope": 0.75,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1303.5,
+        "sma": 1303.8800170898498
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "CIPLA",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1333.3000488281,
+      "sma_10": 1326.61000976563,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -3.6299926757799312,
+        "current_slope_classified": -1,
+        "previous_slope": -5.170007324220023,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1333.3000488281,
+        "sma": 1326.61000976563
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    }
+  ],
+  "pass_rate": "0.00%"
+}

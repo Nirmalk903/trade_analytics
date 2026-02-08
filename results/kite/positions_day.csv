@@ -1,0 +1,3 @@
+tradingsymbol,exchange,instrument_token,product,segment,quantity,overnight_quantity,multiplier,average_price,close_price,last_price,value,pnl,m2m,unrealised,realised,buy_quantity,buy_price,buy_value,buy_m2m,sell_quantity,sell_price,sell_value,sell_m2m,day_buy_quantity,day_buy_price,day_buy_value,day_sell_quantity,day_sell_price,day_sell_value
+NIFTY2611326100CE,NFO,11822338,NRML,FO,0,0,1,0,0,129.8,-1547.0,-1547.0,-1547.0,-1547.0,0,585,125.11666666666666,73193.25,73193.25,585,122.47222222222223,71646.25,71646.25,585,125.11666666666666,73193.25,585,122.47222222222223,71646.25
+NIFTY2611326150CE,NFO,11823362,NRML,FO,0,0,1,0,0,101.9,1641.25,1641.25,1641.25,1641.25,0,520,112.59375,58548.75,58548.75,520,115.75,60190.0,60190.0,520,112.59375,58548.75,520,115.75,60190.0

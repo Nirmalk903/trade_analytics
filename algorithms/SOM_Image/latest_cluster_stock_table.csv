@@ -1,0 +1,7 @@
+SOM_cluster,symbol
+"(np.int64(1), np.int64(1))","AXISBANK, INFY, ITC, JSWSTEEL, RELIANCE, TCS, WIPRO"
+"(np.int64(2), np.int64(1))","BEL, BHARTIARTL, ETERNAL, SBIN"
+"(np.int64(2), np.int64(3))",NIFTY
+"(np.int64(3), np.int64(0))","HDFCBANK, ICICIBANK"
+"(np.int64(3), np.int64(2))","ASIANPAINT, M&M"
+"(np.int64(3), np.int64(3))",BANKNIFTY

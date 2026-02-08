@@ -1,0 +1,374 @@
+{
+  "timestamp": "2026-02-06T00:10:08.431040",
+  "data_source": "engineered",
+  "parameters": {
+    "sma_period": 10,
+    "slope_lookback": 1
+  },
+  "symbols_analyzed": 15,
+  "stocks_meeting_all_criteria": 0,
+  "filtered_symbols": [],
+  "details": [
+    {
+      "symbol": "NIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 25642.80078125,
+      "sma_10": 25383.100390625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 48.53007812500073,
+        "current_slope_classified": 1,
+        "previous_slope": 54.349999999998545,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 25642.80078125,
+        "sma": 25383.100390625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 60063.6484375,
+      "sma_10": 59500.78515625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 126.33476562499709,
+        "current_slope_classified": 1,
+        "previous_slope": 83.39492187500582,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 60063.6484375,
+        "sma": 59500.78515625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "INFY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1520.1999511719,
+      "sma_10": 1632.5400024414098,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -13.42000732422025,
+        "current_slope_classified": -1,
+        "previous_slope": -12.309997558599889,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1520.1999511719,
+        "sma": 1632.5400024414098
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TRENT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 4131.2998046875,
+      "sma_10": 3851.56999511718,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 36.689990234369816,
+        "current_slope_classified": 1,
+        "previous_slope": 17.65000000000009,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": true,
+        "cusum_value": 1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 4131.2998046875,
+        "sma": 3851.56999511718
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 2
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1992.4000244141,
+      "sma_10": 1983.55000000002,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.36999511717999667,
+        "current_slope_classified": -1,
+        "previous_slope": 2.9800048828101353,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1992.4000244141,
+        "sma": 1983.55000000002
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "SBIN",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1073.5,
+      "sma_10": 1057.24498291017,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.4849975585900665,
+        "current_slope_classified": 1,
+        "previous_slope": 3.1799926757796584,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1073.5,
+        "sma": 1057.24498291017
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "AXISBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1330.5999755859,
+      "sma_10": 1325.95,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.569995117180042,
+        "current_slope_classified": 1,
+        "previous_slope": 4.519995117189865,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1330.5999755859,
+        "sma": 1325.95
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 408.75,
+      "sma_10": 413.53999938965,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -1.2850006103499823,
+        "current_slope_classified": -1,
+        "previous_slope": -1.1449981689499396,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 408.75,
+        "sma": 413.53999938965
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ICICIBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1396.5,
+      "sma_10": 1370.40000000001,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 4.75,
+        "current_slope_classified": 1,
+        "previous_slope": 3.2599975585999346,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1396.5,
+        "sma": 1370.40000000001
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TCS",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 2991.5,
+      "sma_10": 3132.48000488281,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -13.110009765619907,
+        "current_slope_classified": -1,
+        "previous_slope": -10.319995117190047,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 2991.5,
+        "sma": 3132.48000488281
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "RELIANCE",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1443.4000244141,
+      "sma_10": 1407.99000244141,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 3.8800048828202307,
+        "current_slope_classified": 1,
+        "previous_slope": 6.2800048828098625,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1443.4000244141,
+        "sma": 1407.99000244141
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TATASTEEL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 197.7599945068,
+      "sma_10": 193.28899993896,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 1.3349990844699846,
+        "current_slope_classified": 1,
+        "previous_slope": 1.1839996337900232,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 197.7599945068,
+        "sma": 193.28899993896
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HDFCBANK",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 949.700012207,
+      "sma_10": 933.82499999998,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 2.9350036621099207,
+        "current_slope_classified": 1,
+        "previous_slope": 2.1899963378900793,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 949.700012207,
+        "sma": 933.82499999998
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "HINDALCO",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 935.450012207,
+      "sma_10": 962.76500244139,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.375,
+        "current_slope_classified": -1,
+        "previous_slope": 3.6850036621100344,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 935.450012207,
+        "sma": 962.76500244139
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BEL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 432.8999938965,
+      "sma_10": 434.06000366210003,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 3.025000000000034,
+        "current_slope_classified": 1,
+        "previous_slope": 2.9850006103500277,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": -1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 432.8999938965,
+        "sma": 434.06000366210003
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    }
+  ],
+  "pass_rate": "0.00%"
+}

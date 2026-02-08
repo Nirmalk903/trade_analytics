@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-01-06T11:19:19.859088",
+  "strategies": [
+    {
+      "type": "single",
+      "underlying": "NIFTY",
+      "positions": [
+        {
+          "tradingsymbol": "NIFTY2611326250CE",
+          "exchange": "NFO",
+          "instrument_token": 11826178,
+          "product": "NRML",
+          "segment": "FO",
+          "quantity": 65,
+          "overnight_quantity": 0,
+          "multiplier": 1,
+          "average_price": 139.1,
+          "close_price": 0,
+          "last_price": 101.95,
+          "value": -9041.5,
+          "pnl": -2414.75,
+          "m2m": -2414.75,
+          "unrealised": -2414.75,
+          "realised": 0,
+          "buy_quantity": 65,
+          "buy_price": 139.1,
+          "buy_value": 9041.5,
+          "buy_m2m": 9041.5,
+          "sell_quantity": 0,
+          "sell_price": 0,
+          "sell_value": 0,
+          "sell_m2m": 0,
+          "day_buy_quantity": 65,
+          "day_buy_price": 139.1,
+          "day_buy_value": 9041.5,
+          "day_sell_quantity": 0,
+          "day_sell_price": 0,
+          "day_sell_value": 0,
+          "parsed_option": {
+            "underlying": "NIFTY",
+            "strike": 2611326250.0,
+            "option_type": "CE",
+            "full_symbol": "NIFTY2611326250CE"
+          },
+          "live_spot_price": null
+        }
+      ],
+      "name": "NIFTY2611326250CE"
+    }
+  ],
+  "exit_levels": {
+    "NIFTY2611326250CE": {
+      "target_pnl": 5424.9,
+      "stop_loss_pnl": -934.6572,
+      "current_pnl": -2414.75,
+      "target_profit_pct": 30.0,
+      "stop_loss_pct": 30.0,
+      "distance_to_target": 7839.65,
+      "distance_to_sl": -1480.0928
+    }
+  }
+}

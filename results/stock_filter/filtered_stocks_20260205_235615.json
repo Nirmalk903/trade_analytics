@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-02-05T23:56:15.225926",
+  "data_source": "kite",
+  "parameters": {
+    "sma_period": 10,
+    "slope_lookback": 1,
+    "days": 30,
+    "interval": "day"
+  },
+  "symbols_analyzed": 5,
+  "stocks_meeting_all_criteria": 0,
+  "filtered_symbols": [],
+  "details": [],
+  "pass_rate": "0.00%"
+}

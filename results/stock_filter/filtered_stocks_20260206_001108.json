@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-02-06T00:11:08.509859",
+  "data_source": "engineered",
+  "parameters": {
+    "sma_period": 10,
+    "slope_lookback": 1
+  },
+  "symbols_analyzed": 4,
+  "stocks_meeting_all_criteria": 0,
+  "filtered_symbols": [],
+  "details": [
+    {
+      "symbol": "NIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 25642.80078125,
+      "sma_10": 25383.100390625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 48.53007812500073,
+        "current_slope_classified": 1,
+        "previous_slope": 54.349999999998545,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 25642.80078125,
+        "sma": 25383.100390625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 60063.6484375,
+      "sma_10": 59500.78515625,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 126.33476562499709,
+        "current_slope_classified": 1,
+        "previous_slope": 83.39492187500582,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 60063.6484375,
+        "sma": 59500.78515625
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TRENT",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 4131.2998046875,
+      "sma_10": 3851.56999511718,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 36.689990234369816,
+        "current_slope_classified": 1,
+        "previous_slope": 17.65000000000009,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": true,
+        "cusum_value": 1
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 4131.2998046875,
+        "sma": 3851.56999511718
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 2
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "timestamp": "2026-02-05 00:00:00",
+      "current_price": 1992.4000244141,
+      "sma_10": 1983.55000000002,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.36999511717999667,
+        "current_slope_classified": -1,
+        "previous_slope": 2.9800048828101353,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1992.4000244141,
+        "sma": 1983.55000000002
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    }
+  ],
+  "pass_rate": "0.00%"
+}

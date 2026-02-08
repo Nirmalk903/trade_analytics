@@ -1,0 +1,374 @@
+{
+  "timestamp": "2026-02-06T00:24:41.839782",
+  "data_source": "kite-hourly",
+  "parameters": {
+    "sma_period": 10,
+    "slope_lookback": 1
+  },
+  "symbols_analyzed": 51,
+  "stocks_meeting_all_criteria": 0,
+  "filtered_symbols": [],
+  "details": [
+    {
+      "symbol": "NIFTY",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "INFY",
+      "timestamp": "2026-02-06 00:17:54.723000",
+      "current_price": 1154.6488882476,
+      "sma_10": 1158.5717922764102,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.7301974184997562,
+        "current_slope_classified": -1,
+        "previous_slope": -1.174906234529999,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 1154.6488882476,
+        "sma": 1158.5717922764102
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TRENT",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "SBIN",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "AXISBANK",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ICICIBANK",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TCS",
+      "timestamp": "2026-02-06 00:17:54.734000",
+      "current_price": 3410.8792924192,
+      "sma_10": 3414.2676857530996,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": -0.7989254879803411,
+        "current_slope_classified": -1,
+        "previous_slope": -0.6905371293796634,
+        "previous_slope_classified": -1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": false,
+        "price": 3410.8792924192,
+        "sma": 3414.2676857530996
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "RELIANCE",
+      "timestamp": "2026-02-06 00:17:54.742000",
+      "current_price": 1083.5236120521,
+      "sma_10": 1080.42434632845,
+      "criterion_1_slope_change": {
+        "meets": false,
+        "current_slope": 0.9980689948899908,
+        "current_slope_classified": 1,
+        "previous_slope": 0.662939754080071,
+        "previous_slope_classified": 1
+      },
+      "criterion_2_cusum": {
+        "meets": false,
+        "cusum_value": 0
+      },
+      "criterion_3_price_above_sma": {
+        "meets": true,
+        "price": 1083.5236120521,
+        "sma": 1080.42434632845
+      },
+      "meets_all_criteria": false,
+      "criteria_met_count": 1
+    },
+    {
+      "symbol": "TATASTEEL",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HDFCBANK",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HINDALCO",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BEL",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ETERNAL",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "MARUTI",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "NTPC",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "WIPRO",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "M&M",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ADANIENT",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "JIOFIN",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HCLTECH",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "LT",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ITC",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ONGC",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TECHM",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TITAN",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "EICHERMOT",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "COALINDIA",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "POWERGRID",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "GRASIM",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "DRREDDY",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "TATACONSUM",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "SBILIFE",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "NESTLEIND",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    },
+    {
+      "symbol": "CIPLA",
+      "error": "No data available",
+      "meets_all_criteria": false,
+      "criteria_met_count": 0
+    }
+  ],
+  "pass_rate": "0.00%"
+}

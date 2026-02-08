@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-01-06T09:41:43.625101",
+  "strategies": [
+    {
+      "type": "bull_call_spread",
+      "underlying": "NIFTY",
+      "positions": [
+        {
+          "tradingsymbol": "NIFTY2611326300CE",
+          "exchange": "NFO",
+          "instrument_token": 11826946,
+          "product": "NRML",
+          "segment": "FO",
+          "quantity": 65,
+          "overnight_quantity": 65,
+          "multiplier": 1,
+          "average_price": 190,
+          "close_price": 109.75,
+          "last_price": 102.6,
+          "value": -12350,
+          "pnl": -5681,
+          "m2m": -464.75,
+          "unrealised": -5681,
+          "realised": 0,
+          "buy_quantity": 65,
+          "buy_price": 190,
+          "buy_value": 12350,
+          "buy_m2m": 7133.75,
+          "sell_quantity": 0,
+          "sell_price": 0,
+          "sell_value": 0,
+          "sell_m2m": 0,
+          "day_buy_quantity": 0,
+          "day_buy_price": 0,
+          "day_buy_value": 0,
+          "day_sell_quantity": 0,
+          "day_sell_price": 0,
+          "day_sell_value": 0,
+          "parsed_option": {
+            "underlying": "NIFTY",
+            "strike": 2611326300.0,
+            "option_type": "CE",
+            "full_symbol": "NIFTY2611326300CE"
+          }
+        },
+        {
+          "tradingsymbol": "NIFTY2611326500CE",
+          "exchange": "NFO",
+          "instrument_token": 11828994,
+          "product": "NRML",
+          "segment": "FO",
+          "quantity": -65,
+          "overnight_quantity": -65,
+          "multiplier": 1,
+          "average_price": 71.25,
+          "close_price": 41.55,
+          "last_price": 36.85,
+          "value": 4631.25,
+          "pnl": 2236,
+          "m2m": 305.5,
+          "unrealised": 2236,
+          "realised": 0,
+          "buy_quantity": 0,
+          "buy_price": 0,
+          "buy_value": 0,
+          "buy_m2m": 0,
+          "sell_quantity": 65,
+          "sell_price": 71.25,
+          "sell_value": 4631.25,
+          "sell_m2m": 2700.75,
+          "day_buy_quantity": 0,
+          "day_buy_price": 0,
+          "day_buy_value": 0,
+          "day_sell_quantity": 0,
+          "day_sell_price": 0,
+          "day_sell_value": 0,
+          "parsed_option": {
+            "underlying": "NIFTY",
+            "strike": 2611326500.0,
+            "option_type": "CE",
+            "full_symbol": "NIFTY2611326500CE"
+          }
+        }
+      ],
+      "name": "NIFTY Bull Call Spread",
+      "long_strike": 2611326300.0,
+      "short_strike": 2611326500.0
+    }
+  ],
+  "exit_levels": {
+    "NIFTY Bull Call Spread": {
+      "target_pnl": 1584.375,
+      "stop_loss_pnl": -965.7922,
+      "current_pnl": -3445,
+      "target_profit_pct": 30.0,
+      "stop_loss_pct": 30.0,
+      "distance_to_target": 5029.375,
+      "distance_to_sl": -2479.2078
+    }
+  }
+}

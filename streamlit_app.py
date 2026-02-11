@@ -16,6 +16,85 @@ import numpy as np
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from algorithms.cusum_filter import getTEvents, read_series_from_file, find_dollar_imbalance_file
+from pathlib import Path
+import news_heasines as news_headlines
+
+
+regions_high_only = ['Americas', 'Europe', 'Japan', 'China']
+regions_keep_all = ['India']
+
+
+def _find_calendar_file():
+    calendar_dir = Path("results/economic_calendar")
+    candidates = []
+    candidates.extend(sorted(calendar_dir.glob("economic_calendar_filtered*.csv")))
+    candidates.extend(sorted(calendar_dir.glob("economic_calendar*.csv")))
+    candidates.extend(sorted(calendar_dir.glob("All_Regions_calendar_*.csv")))
+    if candidates:
+        return candidates[-1]
+    return None
+
+
+def _infer_region(df: pd.DataFrame) -> pd.DataFrame:
+    if "Region" in df.columns:
+        return df
+
+    region_mapping = {
+        'Americas': ['USD', 'CAD', 'BRL', 'MXN', 'United States', 'Canada', 'Brazil', 'Mexico'],
+        'Europe': ['EUR', 'GBP', 'CHF', 'SEK', 'NOK', 'DKK', 'Eurozone', 'Germany', 'France', 'UK'],
+        'India': ['INR', 'India'],
+        'China': ['CNY', 'CNH', 'China'],
+        'Japan': ['JPY', 'Japan'],
+    }
+
+    def infer_region(row):
+        country = str(row.get('Country', '')).strip()
+        currency = str(row.get('Currency', '')).strip()
+        for region, tokens in region_mapping.items():
+            if country in tokens or currency in tokens:
+                return region
+        return 'Unknown'
+
+    df = df.copy()
+    df['Region'] = df.apply(infer_region, axis=1)
+    return df
+
+
+def _filter_calendar_df(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+
+    df = _infer_region(df)
+
+    def should_keep_row(row):
+        region = row.get('Region')
+        if region in regions_high_only:
+            return row.get('Importance') == 'High'
+        if region in regions_keep_all:
+            return True
+        return True
+
+    return df[df.apply(should_keep_row, axis=1)].copy()
+
+
+def load_filtered_calendar(save=True):
+    calendar_file = _find_calendar_file()
+    if not calendar_file:
+        return None, "No combined economic calendar CSV found."
+
+    df = pd.read_csv(calendar_file)
+    if df.empty:
+        return df, "Calendar file is empty."
+
+    df_filtered = _filter_calendar_df(df)
+
+    if save:
+        output_dir = Path("results/economic_calendar")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_file = output_dir / "economic_calendar_filtered.csv"
+        df_filtered.to_csv(output_file, index=False)
+
+    return df_filtered, None
 
 st.title("Trading Analytics Dashboard")
 
@@ -470,3 +549,69 @@ if close_prices:
     )
 else:
     st.warning("Not enough data to compute correlation matrix for selected stocks.")
+
+
+# --- Economic Calendar (filtered, combined) ---
+st.header("Economic Calendar")
+with st.expander("View calendar", expanded=True):
+    calendar_df, calendar_err = load_filtered_calendar(save=True)
+    if calendar_err:
+        st.warning(calendar_err)
+    elif calendar_df is None or calendar_df.empty:
+        st.info("No calendar data available.")
+    else:
+        if "Date" in calendar_df.columns:
+            calendar_df["Date"] = pd.to_datetime(calendar_df["Date"], errors="coerce")
+
+        sort_cols = [c for c in ["Date", "Time"] if c in calendar_df.columns]
+        if sort_cols:
+            calendar_df = calendar_df.sort_values(sort_cols)
+
+        display_cols = [
+            col for col in ["Date", "Time", "Region", "Country", "Currency", "Event", "Importance", "Forecast", "Previous", "Actual"]
+            if col in calendar_df.columns
+        ]
+
+        st.dataframe(calendar_df[display_cols], use_container_width=True)
+
+
+# --- News Headlines ---
+st.header("News Headlines")
+
+@st.cache_data(ttl=1800)
+def _load_news_headlines(symbols: list[str], selected_date: str):
+    name_map = news_headlines._load_name_map()
+    news_items = news_headlines._fetch_all_news_items(symbols)
+
+    rows = []
+    for sym in symbols:
+        rows.append(
+            news_headlines._fetch_symbol_data(
+                sym,
+                news_items,
+                days_back=news_headlines.DEFAULT_DAYS_BACK,
+                max_headlines=news_headlines.DEFAULT_MAX_HEADLINES,
+                name_map=name_map,
+            )
+        )
+
+    df = pd.DataFrame(rows)
+    if "HeadlineTime" in df.columns:
+        df["HeadlineTime"] = df["HeadlineTime"].astype(str)
+    return df
+
+
+with st.expander("View headlines", expanded=True):
+    news_df = _load_news_headlines(selected_symbols, selected_date)
+    if news_df is None or news_df.empty:
+        st.info("No headlines available.")
+    else:
+        display_cols = [
+            col for col in [
+                "Symbol", "Headline", "HeadlineTime", "HeadlineSource", "HeadlineLink",
+                "Event", "EventDate", "CorporateAction", "CorporateActionDate",
+                "Headlines", "HeadlineSources", "HeadlineLinks",
+            ]
+            if col in news_df.columns
+        ]
+        st.dataframe(news_df[display_cols], use_container_width=True)

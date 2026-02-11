@@ -67,12 +67,21 @@ def main():
         
         output_dir = 'results/economic_calendar'
         Path(output_dir).mkdir(parents=True, exist_ok=True)
-        
+
+        combined_frames = []
         for region, df in calendars.items():
             if not df.empty:
-                filename = f"{output_dir}/{region}_calendar.csv"
-                df.to_csv(filename, index=False)
-                logger.info(f"Saved {region} to {filename}")
+                df_with_region = df.copy()
+                df_with_region['Region'] = region
+                combined_frames.append(df_with_region)
+
+        if combined_frames:
+            combined_df = pd.concat(combined_frames, ignore_index=True)
+            filename = f"{output_dir}/economic_calendar.csv"
+            combined_df.to_csv(filename, index=False)
+            logger.info(f"Saved combined calendar to {filename}")
+        else:
+            logger.warning("No calendar data to save")
     
     print("\n" + "="*100 + "\n")
 

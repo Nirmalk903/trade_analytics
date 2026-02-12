@@ -18,6 +18,9 @@ from functools import lru_cache
 from algorithms.cusum_filter import getTEvents, read_series_from_file, find_dollar_imbalance_file
 from pathlib import Path
 import news_heasines as news_headlines
+import pytz
+import pendulum
+import json
 
 
 regions_high_only = ['Americas', 'Europe', 'Japan', 'China']
@@ -554,6 +557,56 @@ else:
 # --- Economic Calendar (filtered, combined) ---
 st.header("Economic Calendar")
 with st.expander("View calendar", expanded=True):
+    # Timezone selector for calendar filtering (default to system timezone)
+    # Short curated timezone list for compact UI
+    tz_list = [
+        "UTC",
+        "US/Eastern",
+        "US/Central",
+        "US/Pacific",
+        "Europe/London",
+        "Europe/Paris",
+        "Asia/Kolkata",
+        "Asia/Shanghai",
+        "Asia/Tokyo",
+        "Australia/Sydney",
+    ]
+
+    try:
+        default_tz = pendulum.local_timezone().name
+    except Exception:
+        default_tz = "UTC"
+
+    # Ensure user's system timezone appears first if it's not already in the short list
+    if default_tz not in tz_list:
+        tz_list = [default_tz] + tz_list
+
+    tz_index = tz_list.index(default_tz) if default_tz in tz_list else 0
+
+    # Load persisted timezone from settings file if present
+    settings_file = Path.home() / ".algotrading_settings.json"
+    persisted_tz = None
+    try:
+        if settings_file.exists():
+            cfg = json.loads(settings_file.read_text())
+            persisted_tz = cfg.get("calendar_tz")
+    except Exception:
+        persisted_tz = None
+
+    if persisted_tz and persisted_tz not in tz_list:
+        tz_list = [persisted_tz] + tz_list
+
+    selected_tz = st.selectbox("Select timezone for calendar", options=tz_list, index=tz_list.index(persisted_tz) if persisted_tz in tz_list else tz_index, key="calendar_tz_select")
+
+    # Persist selection for future sessions
+    try:
+        cfg = {}
+        if settings_file.exists():
+            cfg = json.loads(settings_file.read_text())
+        cfg["calendar_tz"] = selected_tz
+        settings_file.write_text(json.dumps(cfg))
+    except Exception:
+        pass
     calendar_df, calendar_err = load_filtered_calendar(save=True)
     if calendar_err:
         st.warning(calendar_err)
@@ -567,10 +620,26 @@ with st.expander("View calendar", expanded=True):
         if sort_cols:
             calendar_df = calendar_df.sort_values(sort_cols)
 
+        # Exclude past releases prior to the selected date (keep NaT rows)
+        try:
+            # Use the user's selected timezone to compute 'today' and filter past releases
+            tzobj = pytz.timezone(selected_tz)
+            today_in_tz = pd.Timestamp.now(tz=tzobj).date()
+            if "Date" in calendar_df.columns:
+                # compare by date to avoid timezone-aware vs naive mismatches
+                calendar_df = calendar_df[calendar_df["Date"].isna() | (calendar_df["Date"].dt.date >= today_in_tz)]
+        except Exception:
+            # if something goes wrong with date parsing or timezone, skip filtering
+            pass
+
         display_cols = [
             col for col in ["Date", "Time", "Region", "Country", "Currency", "Event", "Importance", "Forecast", "Previous", "Actual"]
             if col in calendar_df.columns
         ]
+
+        # Reset index so the displayed table has a clean 1..N index
+        calendar_df = calendar_df.reset_index(drop=True)
+        calendar_df.index = range(1, len(calendar_df) + 1)
 
         st.dataframe(calendar_df[display_cols], use_container_width=True)
 

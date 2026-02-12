@@ -21,8 +21,8 @@ except ImportError:
 
 # Regional mapping for economic calendar
 REGIONS = {
-    'Americas': ['USD', 'CAD', 'BRL', 'MXN'],
-    'Europe': ['EUR', 'GBP', 'CHF', 'SEK', 'NOK', 'DKK'],
+    'Americas': ['USD'],
+    'Europe': ['EUR', 'GBP'],
     'Asia': {
         'India': ['INR'],
         'China': ['CNY', 'CNH'],
@@ -34,7 +34,7 @@ REGIONS = {
 REGION_IMPORTANCE_DEFAULTS = {
     'Americas': ['high'],
     'Europe': ['high'],
-    'India': ['high', 'medium', 'low'],  # Keep all importance levels for India
+    'India': ['high', 'medium'],  # Keep all importance levels for India
     'China': ['high'],
     'Japan': ['high']
 }
@@ -42,7 +42,7 @@ REGION_IMPORTANCE_DEFAULTS = {
 
 def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China', 'Japan'], 
                                  importance_levels=None, 
-                                 days_back=1, 
+                                 days_back=0, 
                                  days_forward=7):
     """
     Fetch economic calendar for multiple regions with region-specific importance defaults.

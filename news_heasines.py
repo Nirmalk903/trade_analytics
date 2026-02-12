@@ -169,6 +169,23 @@ def _compile_symbol_patterns(symbol: str, name_map: dict) -> list[re.Pattern]:
     return patterns
 
 
+def _yf_symbol_for(symbol: str) -> str:
+    sym = str(symbol).strip()
+    if not sym:
+        return sym
+
+    sym_upper = sym.upper()
+    if sym_upper in {"NIFTY", "NIFTY50"}:
+        return "^NSEI"
+    if sym_upper == "BANKNIFTY":
+        return "^NSEBANK"
+
+    if sym_upper.startswith("^") or sym_upper.endswith(".NS") or sym_upper.endswith(".BO"):
+        return sym
+
+    return f"{sym}.NS"
+
+
 def _google_news_rss(symbol: str) -> str:
     query = f"{symbol} stock India"
     return f"https://news.google.com/rss/search?q={requests.utils.quote(query)}&hl=en-IN&gl=IN&ceid=IN:en"
@@ -352,7 +369,7 @@ def _fetch_symbol_data(symbol: str, news_items: list[dict], days_back: int, max_
         data["CorporateActionDate"] = action_date
 
     try:
-        ticker = yf.Ticker(symbol)
+        ticker = yf.Ticker(_yf_symbol_for(symbol))
     except Exception:
         return data
 

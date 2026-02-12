@@ -331,7 +331,7 @@ def _fetch_symbol_data(symbol: str, news_items: list[dict], days_back: int, max_
             title = f"{item.get('title', '')} {item.get('summary', '')}".lower()
             kw_score = sum(k in title for k in EVENT_KEYWORDS + ACTION_KEYWORDS)
             ts = item.get("published_ts")
-            return (kw_score, ts or pd.Timestamp.min)
+            return (kw_score, ts or pd.Timestamp.min.tz_localize("UTC"))
 
         matched_items = sorted(matched_items, key=_score, reverse=True)
         top = matched_items[0]

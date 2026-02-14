@@ -48,3 +48,20 @@ This codebase is an algorithmic trading platform for Indian options and futures,
 
 ---
 For new agents: Start by reading `strategy_position_manager.py` and `README.md` to understand the main workflow, conventions, and extension points. Use the provided command-line examples to run and test strategies. Review the results directory for log/report structure.
+
+## Economic Calendar (notes for Copilot)
+
+- The repository now consolidates economic calendar fetching into `calendar_fetcher.py` (replaces older `market_calendar.py`/`fetch_calendar_smart.py`).
+- Programmatic API: `from calendar_fetcher import fetch_and_save, filter_and_save` — `fetch_and_save()` returns a dict mapping region -> DataFrame and also saves CSVs to `results/economic_calendar/` when run without errors.
+- CLI usage: `python3 calendar_fetcher.py --save` (see `MARKET_CALENDAR_GUIDE.md` for examples).
+- Streamlit integration: `streamlit_app.py` exposes a "Fetch Latest Calendar" button which calls `fetch_and_save()` and `filter_and_save()`; the UI reads `results/economic_calendar/economic_calendar.csv` or the latest timestamped file.
+
+- Enabling real data sources:
+	- Trading Economics API: set env `TRADING_ECONOMICS_KEY` (or pass `trading_econ_key` into `fetch_and_save`) for the Trading Economics provider.
+	- FRED API: set env `FRED_API_KEY` for US indicators (optional).
+	- If neither key is present, `calendar_fetcher` falls back to investing.com scraping (best-effort) or creates an empty placeholder combined CSV so the app can load without crashing.
+
+- Troubleshooting:
+	- If the Streamlit calendar shows "No calendar data available", check `results/economic_calendar/` for saved CSVs and their sizes.
+	- To test the calendar locally without API keys, you can create a small sample CSV (columns: Date, Time, Country, Currency, Event, Importance, Forecast, Previous, Actual) and place it in `results/economic_calendar/` named `economic_calendar.csv`.
+

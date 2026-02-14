@@ -1,7 +1,7 @@
 # Market Calendar Guide
 
 ## Overview
-The `market_calendar.py` script fetches upcoming economic events from multiple global regions including Americas, Europe, India, China, and Japan.
+The `calendar_fetcher.py` module fetches upcoming economic events from multiple global regions including Americas, Europe, India, China, and Japan.
 
 ## Features
 - ✅ Multi-region economic calendar (Americas, Europe, India, China, Japan)
@@ -16,42 +16,39 @@ The `market_calendar.py` script fetches upcoming economic events from multiple g
 ### Basic Usage
 ```bash
 # Fetch high-importance events for all regions (next 7 days)
-python3 market_calendar.py
+python3 calendar_fetcher.py --save
 ```
 
 ### Advanced Usage
 
 #### Specific Regions
 ```bash
-# Fetch calendar for specific regions only
-python3 market_calendar.py --regions Americas Europe India
+python3 calendar_fetcher.py --regions Americas Europe India --save
 ```
 
 #### Multiple Importance Levels
 ```bash
-# Include both high and medium importance events
-python3 market_calendar.py --importance high medium
+python3 calendar_fetcher.py --importance high medium --save
 ```
 
 #### Extended Time Period
 ```bash
-# Look 14 days ahead
-python3 market_calendar.py --days 14
+python3 calendar_fetcher.py --days 14 --save
 ```
 
 #### Save to CSV
 ```bash
 # Save results to CSV files
-python3 market_calendar.py --save
+python3 calendar_fetcher.py --save
 
 # Save to custom directory
-python3 market_calendar.py --save --output-dir my_calendar_data
+python3 calendar_fetcher.py --save --output-dir my_calendar_data
 ```
 
 #### Combined Options
 ```bash
 # Fetch high & medium importance events for 14 days, save to CSV
-python3 market_calendar.py --importance high medium --days 14 --save
+python3 calendar_fetcher.py --importance high medium --days 14 --save
 ```
 
 ## Command-Line Options
@@ -68,29 +65,20 @@ python3 market_calendar.py --importance high medium --days 14 --save
 
 ### Import Functions
 ```python
-from market_calendar import economic_calendar_by_region, print_regional_calendar
+from calendar_fetcher import fetch_and_save, filter_and_save
 
-# Get calendars as DataFrames
-calendars = economic_calendar_by_region(
-    regions=['Americas', 'Europe', 'India', 'China', 'Japan'],
-    importance_levels=['high', 'medium'],
-    days_forward=14
-)
+# Fetch programmatically (returns a dict region -> DataFrame)
+calendars = fetch_and_save(from_date=None, to_date=None, regions=['Americas','Europe','India','China','Japan'])
 
-# Access individual region data
-americas_df = calendars['Americas']
-europe_df = calendars['Europe']
-india_df = calendars['India']
-china_df = calendars['China']
-japan_df = calendars['Japan']
-all_data = calendars['All_Regions']
+# Access individual region data (if present)
+americas_df = calendars.get('Americas')
+europe_df = calendars.get('Europe')
+india_df = calendars.get('India')
+china_df = calendars.get('China')
+japan_df = calendars.get('Japan')
 
-# Print formatted output
-print_regional_calendar(
-    regions=['Americas', 'India'],
-    importance_levels=['high'],
-    days_forward=7
-)
+# Optionally apply filtering rules and save filtered CSV
+filter_and_save()
 ```
 
 ## Regional Coverage
@@ -170,9 +158,10 @@ The economic calendar can be integrated into your trading workflow:
 The original `economic_calendar()` function is maintained for backward compatibility:
 
 ```python
-from market_calendar import economic_calendar
+from calendar_fetcher import fetch_and_save
 
-df = economic_calendar()  # Returns DataFrame with high-importance events
+df_map = fetch_and_save()
+df = df_map.get('India')  # Example: get India region DataFrame
 ```
 
 ## Error Handling

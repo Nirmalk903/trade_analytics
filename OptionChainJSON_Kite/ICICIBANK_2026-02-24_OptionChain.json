@@ -1,0 +1,772 @@
+{
+  "underlying": "ICICIBANK",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:36.629667+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1140,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1140CE",
+        "token": 25947906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1140PE",
+        "token": 25948162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1160,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1160CE",
+        "token": 25950466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1160PE",
+        "token": 25950722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1180,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1180CE",
+        "token": 25950978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1180PE",
+        "token": 25951234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1200,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1200CE",
+        "token": 25951490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1200PE",
+        "token": 25951746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1210,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1210CE",
+        "token": 27787522,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1210PE",
+        "token": 27787778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1220,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1220CE",
+        "token": 25952002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1220PE",
+        "token": 25957378,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1230,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1230CE",
+        "token": 27788034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1230PE",
+        "token": 27788290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1240,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1240CE",
+        "token": 25957634,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1240PE",
+        "token": 25957890,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1250,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1250CE",
+        "token": 27788546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1250PE",
+        "token": 27788802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1260,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1260CE",
+        "token": 25958146,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1260PE",
+        "token": 25958402,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1270,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1270CE",
+        "token": 27789058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1270PE",
+        "token": 27789314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1280,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1280CE",
+        "token": 25958658,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1280PE",
+        "token": 25958914,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1290,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1290CE",
+        "token": 27789570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1290PE",
+        "token": 27789826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1300,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1300CE",
+        "token": 25959170,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1300PE",
+        "token": 25959426,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1310,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1310CE",
+        "token": 27790082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1310PE",
+        "token": 27790338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1320,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1320CE",
+        "token": 25959682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1320PE",
+        "token": 25959938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1330,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1330CE",
+        "token": 27790594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1330PE",
+        "token": 27790850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1340,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1340CE",
+        "token": 25960194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1340PE",
+        "token": 25960706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1350,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1350CE",
+        "token": 27791106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1350PE",
+        "token": 27791362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1360,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1360CE",
+        "token": 25960962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1360PE",
+        "token": 25961218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1370,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1370CE",
+        "token": 27791618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1370PE",
+        "token": 27791874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1380,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1380CE",
+        "token": 25962498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1380PE",
+        "token": 25963522,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1390,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1390CE",
+        "token": 27792130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1390PE",
+        "token": 27792386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1400,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1400CE",
+        "token": 25963778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1400PE",
+        "token": 25964546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1410,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1410CE",
+        "token": 27792642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1410PE",
+        "token": 27806466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1420,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1420CE",
+        "token": 25965058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1420PE",
+        "token": 25965314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1430,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1430CE",
+        "token": 27806722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1430PE",
+        "token": 27806978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1440,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1440CE",
+        "token": 25966082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1440PE",
+        "token": 25966338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1450,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1450CE",
+        "token": 27807234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1450PE",
+        "token": 27807490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1460,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1460CE",
+        "token": 25966594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1460PE",
+        "token": 25966850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1470,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1470CE",
+        "token": 27807746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1470PE",
+        "token": 27808002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1480,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1480CE",
+        "token": 25967106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1480PE",
+        "token": 25967362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1490,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1490CE",
+        "token": 27808258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1490PE",
+        "token": 27808514,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1500,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1500CE",
+        "token": 25967618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1500PE",
+        "token": 25977346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1510,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1510CE",
+        "token": 27808770,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1510PE",
+        "token": 27809026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1520,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1520CE",
+        "token": 25978114,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1520PE",
+        "token": 25994242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1530,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1530CE",
+        "token": 27809282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1530PE",
+        "token": 27809538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1540,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1540CE",
+        "token": 25994498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1540PE",
+        "token": 25994754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1550,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1550CE",
+        "token": 27809794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1550PE",
+        "token": 27810050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1560,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1560CE",
+        "token": 25995010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1560PE",
+        "token": 25996290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1580,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1580CE",
+        "token": 25997058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1580PE",
+        "token": 25997314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1600,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1600CE",
+        "token": 25997570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1600PE",
+        "token": 25997826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1620,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1620CE",
+        "token": 25998082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1620PE",
+        "token": 25998338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1640,
+      "ce": {
+        "tradingsymbol": "ICICIBANK26FEB1640CE",
+        "token": 26000386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ICICIBANK26FEB1640PE",
+        "token": 26000642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

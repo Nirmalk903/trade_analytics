@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import requests
-from tenacity import retry, stop_after_attempt, stop_after_delay, wait_fixed, wait_random, retry
+from tenacity import retry, stop_after_attempt, wait_fixed, retry_if_exception_type
 from functools import lru_cache
 from datetime import datetime as dt_time
 from datetime import timedelta
@@ -13,61 +13,121 @@ import json
 import time
 import os
 from quantlib_black_scholes import calculate_greeks
+from pathlib import Path
+import random
+
+# Short list of realistic User-Agent strings to rotate
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:116.0) Gecko/20100101 Firefox/116.0",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
+]
 
 # Function to fetch options data from NSE website with retry logic
 
 @lru_cache()
-@retry(wait=wait_random(min=0.1, max=1))
-def fetch_options_data(symbol):
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(1), retry=retry_if_exception_type((requests.RequestException, ValueError)))
+def fetch_options_data(symbol, timeout=10):
+    """Fetch raw JSON from NSE option-chain endpoint and return a Python dict."""
     symbol = symbol.upper()
-    symbol_type = 'indices' if symbol in ['NIFTY','BANKNIFTY','MIDCPNIFTY','FINNIFTY'] else 'equities'
+    symbol_type = 'indices' if symbol in ['NIFTY', 'BANKNIFTY', 'MIDCPNIFTY', 'FINNIFTY'] else 'equities'
     url = f"https://www.nseindia.com/api/option-chain-{symbol_type}?symbol={symbol}"
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
-                'accept-encoding': 'gzip, deflate, br, zstd',
-                'accept-language': 'en-US,en;q=0.9',
-                'accept': '*/*'}
+    ua = random.choice(USER_AGENTS)
+    headers = {
+        'User-Agent': ua,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://www.nseindia.com',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Dest': 'document',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="116", "Not)A;Brand";v="24"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"'
+    }
     session = requests.Session()
-    request = session.get(url, headers=headers)
-    print(request.status_code)
-    response = session.get(url, headers=headers, cookies=dict(request.cookies))
-    
-    return pd.DataFrame(response.json())
+    session.headers.update(headers)
+    # First request to populate cookies / prime server
+    resp = session.get(url, timeout=timeout)
+    resp.raise_for_status()
+    # short delay to reduce server-side rate-limit triggers
+    time.sleep(0.5)
+    # Use cookies from initial request
+    resp2 = session.get(url, cookies=resp.cookies.get_dict(), timeout=timeout)
+    # Save raw response for debugging
+    try:
+        raw_dir = Path('./OptionChainRaw')
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        ts = dt_time.now().strftime('%Y%m%d_%H%M%S')
+        status = resp2.status_code
+        raw_file = raw_dir / f"{symbol}_resp_{ts}_{status}.json"
+        raw_file.write_text(resp2.text)
+    except Exception:
+        pass
+    resp2.raise_for_status()
+    try:
+        return resp2.json()
+    except ValueError as e:
+        raise ValueError(f"Invalid JSON received from {url}: {e}")
 
 
 # Alternative function to fetch options data from NSE Website
 
 @lru_cache()
-def fetch_live_options_data(symbol):
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(1), retry=retry_if_exception_type((requests.RequestException, ValueError)))
+def fetch_live_options_data(symbol, timeout=10):
+    """Fetch and return raw JSON dict from NSE with limited retries and timeouts."""
     symbol = symbol.upper()
     symbol_type = 'indices' if symbol in ['NIFTY', 'BANKNIFTY', 'MIDCPNIFTY', 'FINNIFTY'] else 'equities'
     url = f"https://www.nseindia.com/api/option-chain-{symbol_type}?symbol={symbol}"
-    
+
+    ua = random.choice(USER_AGENTS)
     headers = {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
-        'accept-encoding': 'gzip, deflate, br, zstd',
-        'accept-language': 'en-US,en;q=0.9',
-        'accept': '*/*'
+        'User-Agent': ua,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://www.nseindia.com',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Dest': 'document',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
+        'sec-ch-ua': '"Chromium";v="116", "Not)A;Brand";v="24"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"'
     }
-                
+
     session = requests.Session()
-    while True:
-        request = session.get(url, headers=headers)
-        if request.status_code == 200:
-            cookies = dict(request.cookies)
-            break
-        else:
-            time.sleep(0.5)  # Wait for 0.5 seconds before retrying
-
-    while True:
-        response = session.get(url, headers=headers, cookies=cookies)
-        if response.status_code == 200:
-            print(f"Success! Status code 200 received. {symbol} saved")
-            break
-        else:
-            time.sleep(0.5)
-
-    df = pd.DataFrame(response.json())
-    return df
+    session.headers.update(headers)
+    # make an initial request to get cookies, then request the JSON
+    resp1 = session.get(url, timeout=timeout)
+    resp1.raise_for_status()
+    # small pause to avoid immediate rate-limit rejection
+    time.sleep(0.5)
+    resp2 = session.get(url, cookies=resp1.cookies.get_dict(), timeout=timeout)
+    # Save raw response for debugging
+    try:
+        raw_dir = Path('./OptionChainRaw')
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        ts = dt_time.now().strftime('%Y%m%d_%H%M%S')
+        status = resp2.status_code
+        raw_file = raw_dir / f"{symbol}_resp_{ts}_{status}.json"
+        raw_file.write_text(resp2.text)
+    except Exception:
+        pass
+    resp2.raise_for_status()
+    try:
+        return resp2.json()
+    except ValueError as e:
+        raise ValueError(f"Invalid JSON received from {url}: {e}")
 
 
 def fetch_and_save_options_chain(symbol):
@@ -75,46 +135,48 @@ def fetch_and_save_options_chain(symbol):
     print(f'printing option chain for {symbol}')
     try:
         data = fetch_live_options_data(symbol)
-        # Check if data is empty or not a DataFrame
-        if data is None or data.empty:
+        if not data or not isinstance(data, dict):
             print(f"Warning: No data returned for {symbol}. Skipping.")
             return f"No data for {symbol}"
-        # Check for required keys before proceeding
-        if 'records' not in data or 'expiryDates' not in data.loc[:, 'records']:
-            print(f"Warning: Invalid data structure for {symbol}. Skipping.")
+
+        records = data.get('records', {})
+        expiry_dates = records.get('expiryDates', [])
+        raw_data = records.get('data', [])
+
+        if not expiry_dates or not isinstance(expiry_dates, (list, tuple)):
+            print(f"Warning: No expiryDates found for {symbol}. Skipping.")
             return f"Invalid data for {symbol}"
 
-        dates = pd.to_datetime(data.loc['expiryDates', 'records'], format='%d-%b-%Y')
-        max_expiry = dates[0] + timedelta(days=90)
-        expiry = [i.strftime('%d-%b-%Y') for i in dates if dates[0] <= i <= max_expiry]
+        dates = pd.to_datetime(expiry_dates, format='%d-%b-%Y', errors='coerce')
+        if dates.empty:
+            print(f"Warning: Could not parse expiryDates for {symbol}. Skipping.")
+            return f"Invalid data for {symbol}"
+
+        max_expiry = dates.iloc[0] + timedelta(days=90)
+        expiry_list = [d.strftime('%d-%b-%Y') for d in dates if dates.iloc[0] <= d <= max_expiry]
 
         ls = []
-        for dt in expiry:
-            rawoptions = pd.DataFrame(data['records']['data']).fillna(0)
-            rawoptions = rawoptions[rawoptions['expiryDate'] == dt].reset_index(drop=True)
+        spot_price = records.get('underlyingValue', None)
 
-            for i in range(len(rawoptions)):
-                calloi = callcoi = cltp = putoi = putcoi = pltp = iv = 0
-                stp = rawoptions['strikePrice'][i]
-                if rawoptions['CE'][i] == 0:
-                    calloi = callcoi = 0
-                else:
-                    calloi = rawoptions['CE'][i]['openInterest']
-                    callcoi = rawoptions['CE'][i]['changeinOpenInterest']
-                    cltp = rawoptions['CE'][i]['lastPrice']
-                    civ = rawoptions['CE'][i]['impliedVolatility']
+        for dt in expiry_list:
+            # filter raw_data (list of dicts) for matching expiry
+            filtered = [r for r in raw_data if r.get('expiryDate') == dt]
+            for row in filtered:
+                call = row.get('CE') or {}
+                put = row.get('PE') or {}
 
-                if rawoptions['PE'][i] == 0:
-                    putoi = putcoi = 0
-                else:
-                    putoi = rawoptions['PE'][i]['openInterest']
-                    putcoi = rawoptions['PE'][i]['changeinOpenInterest']
-                    pltp = rawoptions['PE'][i]['lastPrice']
-                    piv = rawoptions['PE'][i]['impliedVolatility']
-                    expiry = rawoptions['PE'][i]['expiryDate']
+                stp = row.get('strikePrice')
+
+                calloi = call.get('openInterest', 0) if isinstance(call, dict) else 0
+                callcoi = call.get('changeinOpenInterest', 0) if isinstance(call, dict) else 0
+                cltp = call.get('lastPrice', 0) if isinstance(call, dict) else 0
+
+                putoi = put.get('openInterest', 0) if isinstance(put, dict) else 0
+                putcoi = put.get('changeinOpenInterest', 0) if isinstance(put, dict) else 0
+                pltp = put.get('lastPrice', 0) if isinstance(put, dict) else 0
 
                 optdata = {
-                    'Expiry': expiry,
+                    'Expiry': dt,
                     'call_oi': calloi,
                     'call_change_oi': callcoi,
                     'call_ltp': cltp,
@@ -122,15 +184,20 @@ def fetch_and_save_options_chain(symbol):
                     'put_ltp': pltp,
                     'put_oi': putoi,
                     'put_change_oi': putcoi,
-                    'spot_price': data.loc['underlyingValue', 'records']
+                    'spot_price': spot_price
                 }
 
                 ls.append(optdata)
-            OptionChain = pd.DataFrame(ls)
-            new_dir = f'./OptionChainJSON'
-            os.makedirs(new_dir, exist_ok=True)
-            file_path = os.path.join(new_dir, f'{symbol}_OptionChain.json')
-            OptionChain.to_json(file_path, orient='records')
+
+        if not ls:
+            print(f"No option rows extracted for {symbol}.")
+            return f"No option rows for {symbol}"
+
+        OptionChain = pd.DataFrame(ls)
+        new_dir = f'./OptionChainJSON'
+        os.makedirs(new_dir, exist_ok=True)
+        file_path = os.path.join(new_dir, f'{symbol}_OptionChain.json')
+        OptionChain.to_json(file_path, orient='records')
         return f'Option Chain Saved'
     except Exception as e:
         print(f"Error fetching/saving option chain for {symbol}: {e}")

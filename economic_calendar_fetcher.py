@@ -13,7 +13,7 @@ Sources (in priority order):
 import pandas as pd
 import logging
 from datetime import datetime, timedelta
-import request
+import requests
 from bs4 import BeautifulSoup
 import time
 

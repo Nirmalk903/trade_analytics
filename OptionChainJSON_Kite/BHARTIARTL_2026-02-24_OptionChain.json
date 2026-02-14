@@ -1,0 +1,636 @@
+{
+  "underlying": "BHARTIARTL",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:45.734164+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1640,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1640CE",
+        "token": 20414978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1640PE",
+        "token": 20415234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1680,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1680CE",
+        "token": 20415490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1680PE",
+        "token": 20415746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1720,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1720CE",
+        "token": 20416002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1720PE",
+        "token": 20416258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1740,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1740CE",
+        "token": 20039682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1740PE",
+        "token": 20039938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1760,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1760CE",
+        "token": 20418306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1760PE",
+        "token": 20418562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1780,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1780CE",
+        "token": 20040194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1780PE",
+        "token": 20040450,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1800,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1800CE",
+        "token": 20418818,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1800PE",
+        "token": 20419074,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1820,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1820CE",
+        "token": 20040706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1820PE",
+        "token": 20040962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1840,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1840CE",
+        "token": 20429314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1840PE",
+        "token": 20429570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1860,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1860CE",
+        "token": 20041218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1860PE",
+        "token": 20041474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1880,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1880CE",
+        "token": 20429826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1880PE",
+        "token": 20430082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1900,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1900CE",
+        "token": 20041730,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1900PE",
+        "token": 20041986,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1920,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1920CE",
+        "token": 20430338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1920PE",
+        "token": 20430594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1940,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1940CE",
+        "token": 20042242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1940PE",
+        "token": 20042498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1960,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1960CE",
+        "token": 20430850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1960PE",
+        "token": 20431106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1980,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB1980CE",
+        "token": 20042754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB1980PE",
+        "token": 20045058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2000,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2000CE",
+        "token": 20431362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2000PE",
+        "token": 20431618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2020,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2020CE",
+        "token": 20045314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2020PE",
+        "token": 20046594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2040,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2040CE",
+        "token": 20431874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2040PE",
+        "token": 20432130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2060,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2060CE",
+        "token": 20046850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2060PE",
+        "token": 20047106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2080,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2080CE",
+        "token": 20432386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2080PE",
+        "token": 20433154,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2100,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2100CE",
+        "token": 20047362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2100PE",
+        "token": 20047618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2120,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2120CE",
+        "token": 20435202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2120PE",
+        "token": 20435714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2140,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2140CE",
+        "token": 20047874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2140PE",
+        "token": 20050690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2160,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2160CE",
+        "token": 20435970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2160PE",
+        "token": 20436226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2180,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2180CE",
+        "token": 20050946,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2180PE",
+        "token": 20054786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2200,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2200CE",
+        "token": 20436482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2200PE",
+        "token": 20436738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2220,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2220CE",
+        "token": 20055042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2220PE",
+        "token": 20055298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2240,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2240CE",
+        "token": 20436994,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2240PE",
+        "token": 20438530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2260,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2260CE",
+        "token": 20060674,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2280,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2280CE",
+        "token": 20438786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2280PE",
+        "token": 20439042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2300,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2300CE",
+        "token": 20061186,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2300PE",
+        "token": 20061442,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2320,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2320CE",
+        "token": 20439298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2320PE",
+        "token": 20439554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2360,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2360CE",
+        "token": 20439810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2360PE",
+        "token": 20440066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2400,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2400CE",
+        "token": 20440322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "BHARTIARTL26FEB2400PE",
+        "token": 20440578,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2480,
+      "ce": {
+        "tradingsymbol": "BHARTIARTL26FEB2480CE",
+        "token": 20441346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,1044 @@
+{
+  "underlying": "LT",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:39.399660+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3280,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3280PE",
+        "token": 29203970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3320,
+      "ce": {
+        "tradingsymbol": "LT26FEB3320CE",
+        "token": 10550530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3320PE",
+        "token": 10550786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3360,
+      "ce": {
+        "tradingsymbol": "LT26FEB3360CE",
+        "token": 29204738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3360PE",
+        "token": 29204994,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3400,
+      "ce": {
+        "tradingsymbol": "LT26FEB3400CE",
+        "token": 29205250,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3400PE",
+        "token": 29205506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3440,
+      "ce": {
+        "tradingsymbol": "LT26FEB3440CE",
+        "token": 29205762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3440PE",
+        "token": 29206018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3480,
+      "ce": {
+        "tradingsymbol": "LT26FEB3480CE",
+        "token": 29206274,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3480PE",
+        "token": 29206530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3500,
+      "ce": {
+        "tradingsymbol": "LT26FEB3500CE",
+        "token": 33601282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3500PE",
+        "token": 33601538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3520,
+      "ce": {
+        "tradingsymbol": "LT26FEB3520CE",
+        "token": 29206786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3520PE",
+        "token": 29207810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3540,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3540PE",
+        "token": 33603586,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3560,
+      "ce": {
+        "tradingsymbol": "LT26FEB3560CE",
+        "token": 29208066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3560PE",
+        "token": 29208322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3580,
+      "ce": {
+        "tradingsymbol": "LT26FEB3580CE",
+        "token": 33603842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3580PE",
+        "token": 33604098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3600,
+      "ce": {
+        "tradingsymbol": "LT26FEB3600CE",
+        "token": 29208578,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3600PE",
+        "token": 29208834,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3620,
+      "ce": {
+        "tradingsymbol": "LT26FEB3620CE",
+        "token": 33605634,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3620PE",
+        "token": 33605890,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3640,
+      "ce": {
+        "tradingsymbol": "LT26FEB3640CE",
+        "token": 29209090,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3640PE",
+        "token": 29210626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3660,
+      "ce": {
+        "tradingsymbol": "LT26FEB3660CE",
+        "token": 33606658,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3660PE",
+        "token": 33606914,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3680,
+      "ce": {
+        "tradingsymbol": "LT26FEB3680CE",
+        "token": 29212674,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3680PE",
+        "token": 29212930,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3700,
+      "ce": {
+        "tradingsymbol": "LT26FEB3700CE",
+        "token": 33607170,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3700PE",
+        "token": 33615106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3720,
+      "ce": {
+        "tradingsymbol": "LT26FEB3720CE",
+        "token": 29213698,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3720PE",
+        "token": 29213954,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3740,
+      "ce": {
+        "tradingsymbol": "LT26FEB3740CE",
+        "token": 33615362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3740PE",
+        "token": 33616130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3760,
+      "ce": {
+        "tradingsymbol": "LT26FEB3760CE",
+        "token": 29214210,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3760PE",
+        "token": 29214466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3780,
+      "ce": {
+        "tradingsymbol": "LT26FEB3780CE",
+        "token": 33616386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3780PE",
+        "token": 33616642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3800,
+      "ce": {
+        "tradingsymbol": "LT26FEB3800CE",
+        "token": 29214722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3800PE",
+        "token": 29214978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3820,
+      "ce": {
+        "tradingsymbol": "LT26FEB3820CE",
+        "token": 33617410,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3820PE",
+        "token": 33617666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3840,
+      "ce": {
+        "tradingsymbol": "LT26FEB3840CE",
+        "token": 29215234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3840PE",
+        "token": 29215490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3860,
+      "ce": {
+        "tradingsymbol": "LT26FEB3860CE",
+        "token": 33618690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3860PE",
+        "token": 33619970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3880,
+      "ce": {
+        "tradingsymbol": "LT26FEB3880CE",
+        "token": 29215746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3880PE",
+        "token": 29216002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3900,
+      "ce": {
+        "tradingsymbol": "LT26FEB3900CE",
+        "token": 33620226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3900PE",
+        "token": 33621506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3920,
+      "ce": {
+        "tradingsymbol": "LT26FEB3920CE",
+        "token": 29216258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3920PE",
+        "token": 29217026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3940,
+      "ce": {
+        "tradingsymbol": "LT26FEB3940CE",
+        "token": 33621762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3940PE",
+        "token": 33622018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3960,
+      "ce": {
+        "tradingsymbol": "LT26FEB3960CE",
+        "token": 29217282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3960PE",
+        "token": 29217538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 3980,
+      "ce": {
+        "tradingsymbol": "LT26FEB3980CE",
+        "token": 33622274,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB3980PE",
+        "token": 33622530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4000,
+      "ce": {
+        "tradingsymbol": "LT26FEB4000CE",
+        "token": 29217794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4000PE",
+        "token": 29218050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4020,
+      "ce": {
+        "tradingsymbol": "LT26FEB4020CE",
+        "token": 33622786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4020PE",
+        "token": 33623042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4040,
+      "ce": {
+        "tradingsymbol": "LT26FEB4040CE",
+        "token": 29218306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4040PE",
+        "token": 29218562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4060,
+      "ce": {
+        "tradingsymbol": "LT26FEB4060CE",
+        "token": 33623298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4060PE",
+        "token": 33623554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4080,
+      "ce": {
+        "tradingsymbol": "LT26FEB4080CE",
+        "token": 29219586,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4080PE",
+        "token": 29241602,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4100,
+      "ce": {
+        "tradingsymbol": "LT26FEB4100CE",
+        "token": 33623810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4100PE",
+        "token": 33624066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4120,
+      "ce": {
+        "tradingsymbol": "LT26FEB4120CE",
+        "token": 29241858,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4120PE",
+        "token": 29246210,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4140,
+      "ce": {
+        "tradingsymbol": "LT26FEB4140CE",
+        "token": 33624322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4140PE",
+        "token": 33624578,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4160,
+      "ce": {
+        "tradingsymbol": "LT26FEB4160CE",
+        "token": 29246722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4160PE",
+        "token": 29247234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4180,
+      "ce": {
+        "tradingsymbol": "LT26FEB4180CE",
+        "token": 33624834,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4180PE",
+        "token": 33625090,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4200,
+      "ce": {
+        "tradingsymbol": "LT26FEB4200CE",
+        "token": 29247490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4200PE",
+        "token": 29248002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4220,
+      "ce": {
+        "tradingsymbol": "LT26FEB4220CE",
+        "token": 33625346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4220PE",
+        "token": 33625602,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4240,
+      "ce": {
+        "tradingsymbol": "LT26FEB4240CE",
+        "token": 29248258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4240PE",
+        "token": 29248514,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4260,
+      "ce": {
+        "tradingsymbol": "LT26FEB4260CE",
+        "token": 33625858,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4260PE",
+        "token": 33626114,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4280,
+      "ce": {
+        "tradingsymbol": "LT26FEB4280CE",
+        "token": 29248770,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4280PE",
+        "token": 29249026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4300,
+      "ce": {
+        "tradingsymbol": "LT26FEB4300CE",
+        "token": 33626370,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4300PE",
+        "token": 33626626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4320,
+      "ce": {
+        "tradingsymbol": "LT26FEB4320CE",
+        "token": 29249282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4320PE",
+        "token": 29249538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4340,
+      "ce": {
+        "tradingsymbol": "LT26FEB4340CE",
+        "token": 33626882,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4340PE",
+        "token": 33627138,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4360,
+      "ce": {
+        "tradingsymbol": "LT26FEB4360CE",
+        "token": 29249794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4360PE",
+        "token": 29250050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4380,
+      "ce": {
+        "tradingsymbol": "LT26FEB4380CE",
+        "token": 33627394,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4380PE",
+        "token": 33627650,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4400,
+      "ce": {
+        "tradingsymbol": "LT26FEB4400CE",
+        "token": 29250306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4400PE",
+        "token": 29250562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4420,
+      "ce": {
+        "tradingsymbol": "LT26FEB4420CE",
+        "token": 33627906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4420PE",
+        "token": 33628162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4440,
+      "ce": {
+        "tradingsymbol": "LT26FEB4440CE",
+        "token": 29250818,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4440PE",
+        "token": 29251330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4480,
+      "ce": {
+        "tradingsymbol": "LT26FEB4480CE",
+        "token": 29251586,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4480PE",
+        "token": 29252098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4520,
+      "ce": {
+        "tradingsymbol": "LT26FEB4520CE",
+        "token": 29255426,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4520PE",
+        "token": 29256450,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4560,
+      "ce": {
+        "tradingsymbol": "LT26FEB4560CE",
+        "token": 29256706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4560PE",
+        "token": 29256962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4600,
+      "ce": {
+        "tradingsymbol": "LT26FEB4600CE",
+        "token": 29257218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4600PE",
+        "token": 29257474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4640,
+      "ce": {
+        "tradingsymbol": "LT26FEB4640CE",
+        "token": 29257730,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4640PE",
+        "token": 29257986,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 4680,
+      "ce": {
+        "tradingsymbol": "LT26FEB4680CE",
+        "token": 29258242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "LT26FEB4680PE",
+        "token": 29259010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

@@ -168,7 +168,7 @@ def economic_calendar_by_region(regions=['Americas', 'Europe', 'India', 'China',
         
         # Create a combined view with only high importance events for consistency
         combined_importance = ['high']
-        region_dfs['All_Regions'] = df.query("Importance in @combined_importance").sort_values('Date').reset_index(drop=True)
+        region_dfs['All_Regions'] = df.query("importance in @combined_importance").sort_values('date').reset_index(drop=True)
         
         logger.info(f"Successfully fetched calendar for {len(regions)} regions")
         return region_dfs

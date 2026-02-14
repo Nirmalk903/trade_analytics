@@ -1,0 +1,1316 @@
+{
+  "underlying": "INFY",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:32.747258+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 680,
+      "ce": {
+        "tradingsymbol": "INFY26FEB680CE",
+        "token": 15273218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB680PE",
+        "token": 15273474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 720,
+      "ce": {
+        "tradingsymbol": "INFY26FEB720CE",
+        "token": 15273730,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB720PE",
+        "token": 15273986,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 760,
+      "ce": {
+        "tradingsymbol": "INFY26FEB760CE",
+        "token": 14390274,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB760PE",
+        "token": 14390530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 800,
+      "ce": {
+        "tradingsymbol": "INFY26FEB800CE",
+        "token": 12728066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB800PE",
+        "token": 12728322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 840,
+      "ce": {
+        "tradingsymbol": "INFY26FEB840CE",
+        "token": 12728578,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB840PE",
+        "token": 12728834,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 880,
+      "ce": {
+        "tradingsymbol": "INFY26FEB880CE",
+        "token": 12730114,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB880PE",
+        "token": 12731138,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 900,
+      "ce": {
+        "tradingsymbol": "INFY26FEB900CE",
+        "token": 15275778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB900PE",
+        "token": 15276034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 920,
+      "ce": {
+        "tradingsymbol": "INFY26FEB920CE",
+        "token": 9815810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB920PE",
+        "token": 9816066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 940,
+      "ce": {
+        "tradingsymbol": "INFY26FEB940CE",
+        "token": 15276802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB940PE",
+        "token": 15277058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 960,
+      "ce": {
+        "tradingsymbol": "INFY26FEB960CE",
+        "token": 26971906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB960PE",
+        "token": 26972162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 980,
+      "ce": {
+        "tradingsymbol": "INFY26FEB980CE",
+        "token": 15277826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB980PE",
+        "token": 15278082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1000,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1000CE",
+        "token": 29537538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1000PE",
+        "token": 29537794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1020,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1020CE",
+        "token": 13630210,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1020PE",
+        "token": 13636098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1040,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1040CE",
+        "token": 26972418,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1040PE",
+        "token": 26972674,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1060,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1060CE",
+        "token": 12731394,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1060PE",
+        "token": 12731650,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1080,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1080CE",
+        "token": 26972930,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1080PE",
+        "token": 26973186,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1100,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1100CE",
+        "token": 12731906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1100PE",
+        "token": 12732162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1120,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1120CE",
+        "token": 26973442,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1120PE",
+        "token": 26973698,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1140,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1140CE",
+        "token": 11489026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1140PE",
+        "token": 11489282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1160,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1160CE",
+        "token": 26974466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1160PE",
+        "token": 26974722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1180,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1180CE",
+        "token": 29539842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1180PE",
+        "token": 29540098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1200,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1200CE",
+        "token": 26975490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1200PE",
+        "token": 26975746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1220,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1220CE",
+        "token": 29540354,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1220PE",
+        "token": 29540610,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1240,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1240CE",
+        "token": 26976002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1240PE",
+        "token": 26976258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1260,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1260CE",
+        "token": 29540866,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1260PE",
+        "token": 29541122,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1280,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1280CE",
+        "token": 27006466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1280PE",
+        "token": 27006722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1300,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1300CE",
+        "token": 29542146,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1300PE",
+        "token": 29542402,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1320,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1320CE",
+        "token": 27006978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1320PE",
+        "token": 27007234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1340,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1340CE",
+        "token": 29542658,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1340PE",
+        "token": 29546242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1360,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1360CE",
+        "token": 27007490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1360PE",
+        "token": 27007746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1380,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1380CE",
+        "token": 29546498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1380PE",
+        "token": 29546754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1400,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1400CE",
+        "token": 27008002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1400PE",
+        "token": 27008258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1420,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1420CE",
+        "token": 29547010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1420PE",
+        "token": 29547266,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1440,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1440CE",
+        "token": 27008514,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1440PE",
+        "token": 27008770,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1460,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1460CE",
+        "token": 29547522,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1460PE",
+        "token": 29547778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1480,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1480CE",
+        "token": 27009026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1480PE",
+        "token": 27009282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1500,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1500CE",
+        "token": 29548034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1500PE",
+        "token": 29548290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1520,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1520CE",
+        "token": 27009538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1520PE",
+        "token": 27009794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1540,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1540CE",
+        "token": 29548546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1540PE",
+        "token": 29548802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1560,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1560CE",
+        "token": 27010050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1560PE",
+        "token": 27010306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1580,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1580CE",
+        "token": 29549058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1580PE",
+        "token": 29549314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1600,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1600CE",
+        "token": 27010562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1600PE",
+        "token": 27010818,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1620,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1620CE",
+        "token": 29549570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1620PE",
+        "token": 29549826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1640,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1640CE",
+        "token": 27011074,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1640PE",
+        "token": 27011330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1660,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1660CE",
+        "token": 29550082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1660PE",
+        "token": 29550338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1680,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1680CE",
+        "token": 27011586,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1680PE",
+        "token": 27011842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1700,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1700CE",
+        "token": 29550594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1700PE",
+        "token": 29551106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1720,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1720CE",
+        "token": 27012098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1720PE",
+        "token": 27012354,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1740,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1740CE",
+        "token": 29551362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1740PE",
+        "token": 29551618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1760,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1760CE",
+        "token": 27013122,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1760PE",
+        "token": 27013378,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1780,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1780CE",
+        "token": 29551874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1780PE",
+        "token": 29552130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1800,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1800CE",
+        "token": 27013634,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1800PE",
+        "token": 27013890,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1820,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1820CE",
+        "token": 29552386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1820PE",
+        "token": 29552642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1840,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1840CE",
+        "token": 27014146,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1840PE",
+        "token": 27014402,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1860,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1860CE",
+        "token": 29552898,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1860PE",
+        "token": 29553410,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1880,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1880CE",
+        "token": 27014658,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1880PE",
+        "token": 27014914,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1900,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1900CE",
+        "token": 29553666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1900PE",
+        "token": 29553922,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1920,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1920CE",
+        "token": 27015170,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1920PE",
+        "token": 27015426,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1940,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1940CE",
+        "token": 29554178,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1940PE",
+        "token": 29554434,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1960,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1960CE",
+        "token": 27015682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1960PE",
+        "token": 27015938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 1980,
+      "ce": {
+        "tradingsymbol": "INFY26FEB1980CE",
+        "token": 29554690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB1980PE",
+        "token": 29554946,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2000,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2000CE",
+        "token": 27016194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2000PE",
+        "token": 27016450,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2020,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2020CE",
+        "token": 29555202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2020PE",
+        "token": 29555458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2040,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2040CE",
+        "token": 9452546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2040PE",
+        "token": 9452802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2060,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2060CE",
+        "token": 29555714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2060PE",
+        "token": 29555970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2080,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2080CE",
+        "token": 27016706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2080PE",
+        "token": 27018242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2100,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2100CE",
+        "token": 29556226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2100PE",
+        "token": 29556482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2120,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2120CE",
+        "token": 12368386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2120PE",
+        "token": 12368642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2140,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2140CE",
+        "token": 12991234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2140PE",
+        "token": 12991490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2160,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2160CE",
+        "token": 27018498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2160PE",
+        "token": 27020034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2200,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2200CE",
+        "token": 29556738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2200PE",
+        "token": 29556994,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2240,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2240CE",
+        "token": 27020290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2240PE",
+        "token": 27020546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2280,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2280CE",
+        "token": 29557250,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2280PE",
+        "token": 29558018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2320,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2320CE",
+        "token": 9715970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2320PE",
+        "token": 9716226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2360,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2360CE",
+        "token": 9626370,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2360PE",
+        "token": 9626626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 2400,
+      "ce": {
+        "tradingsymbol": "INFY26FEB2400CE",
+        "token": 12992258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "INFY26FEB2400PE",
+        "token": 12993026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

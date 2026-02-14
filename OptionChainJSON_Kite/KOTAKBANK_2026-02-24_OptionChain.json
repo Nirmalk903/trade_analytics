@@ -1,0 +1,1163 @@
+{
+  "underlying": "KOTAKBANK",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:44.507370+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 345,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB345CE",
+        "token": 11869698,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB345PE",
+        "token": 11869954,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 350,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB350CE",
+        "token": 11870722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB350PE",
+        "token": 11876354,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 355,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB355CE",
+        "token": 11877634,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB355PE",
+        "token": 11880194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 360,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB360CE",
+        "token": 28524546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB360PE",
+        "token": 28524802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 365,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB365CE",
+        "token": 11881474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB365PE",
+        "token": 11881730,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 368,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB368PE",
+        "token": 28525314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 370,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB370CE",
+        "token": 11882498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB370PE",
+        "token": 11882754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 375,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB375CE",
+        "token": 11884546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB375PE",
+        "token": 11884802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 376,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB376CE",
+        "token": 28525570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB376PE",
+        "token": 28525826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 377,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB377.5CE",
+        "token": 11885058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB377.5PE",
+        "token": 11885314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 380,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB380CE",
+        "token": 32341250,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB380PE",
+        "token": 32341506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 382,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB382.5CE",
+        "token": 11885570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB382.5PE",
+        "token": 11885826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 384,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB384CE",
+        "token": 28526082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB384PE",
+        "token": 28526338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 385,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB385CE",
+        "token": 11886082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB385PE",
+        "token": 11886338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 387,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB387.5CE",
+        "token": 11886594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB387.5PE",
+        "token": 11886850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 388,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB388CE",
+        "token": 32341762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB388PE",
+        "token": 32342018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 390,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB390CE",
+        "token": 11887106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB390PE",
+        "token": 11887362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 392,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB392CE",
+        "token": 28526594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB392PE",
+        "token": 28526850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 395,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB395CE",
+        "token": 11889154,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB395PE",
+        "token": 11889410,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 396,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB396PE",
+        "token": 32343042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 397,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB397.5CE",
+        "token": 11889666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB397.5PE",
+        "token": 11889922,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 400,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB400CE",
+        "token": 28527106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB400PE",
+        "token": 28527362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 402,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB402.5CE",
+        "token": 11891202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB402.5PE",
+        "token": 11891458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 404,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB404CE",
+        "token": 32343298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB404PE",
+        "token": 32343554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 405,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB405CE",
+        "token": 11891714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB405PE",
+        "token": 11891970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 407,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB407.5CE",
+        "token": 11892226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB407.5PE",
+        "token": 11892482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 408,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB408CE",
+        "token": 28527618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB408PE",
+        "token": 28527874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 410,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB410CE",
+        "token": 11892738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB410PE",
+        "token": 11892994,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 412,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB412CE",
+        "token": 32343810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB412PE",
+        "token": 32347138,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 415,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB415CE",
+        "token": 11893762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB415PE",
+        "token": 11894018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 416,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB416CE",
+        "token": 28528130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB416PE",
+        "token": 28528386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 417,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB417.5CE",
+        "token": 11894786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB417.5PE",
+        "token": 11895042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 420,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB420CE",
+        "token": 32347394,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB420PE",
+        "token": 32348162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 422,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB422.5CE",
+        "token": 11895298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB422.5PE",
+        "token": 11895554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 424,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB424CE",
+        "token": 28528642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB424PE",
+        "token": 28528898,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 425,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB425CE",
+        "token": 11896322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB425PE",
+        "token": 11896578,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 427,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB427.5CE",
+        "token": 11896834,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB427.5PE",
+        "token": 11897090,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 428,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB428CE",
+        "token": 32348418,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB428PE",
+        "token": 32354050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 430,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB430CE",
+        "token": 11897346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB430PE",
+        "token": 11897602,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 432,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB432.5CE",
+        "token": 11975938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB432.5PE",
+        "token": 11976194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 435,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB435CE",
+        "token": 11976450,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB435PE",
+        "token": 11976706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 436,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB436CE",
+        "token": 32354306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB436PE",
+        "token": 32355842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 437,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB437.5CE",
+        "token": 11976962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB437.5PE",
+        "token": 11977218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 440,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB440CE",
+        "token": 28529666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB440PE",
+        "token": 28529922,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 442,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB442.5CE",
+        "token": 12546306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB442.5PE",
+        "token": 12546562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 444,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB444CE",
+        "token": 32356866,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 445,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB445CE",
+        "token": 12547330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB445PE",
+        "token": 12548098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 447,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB447.5CE",
+        "token": 12584706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB447.5PE",
+        "token": 12584962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 448,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB448CE",
+        "token": 28556034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB448PE",
+        "token": 28556290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 450,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB450CE",
+        "token": 12585218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB450PE",
+        "token": 12585474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 452,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB452CE",
+        "token": 32357890,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB452.5PE",
+        "token": 12585986,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 455,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB455CE",
+        "token": 12586242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB455PE",
+        "token": 12586498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 456,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB456CE",
+        "token": 28558594,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB456PE",
+        "token": 28558850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 457,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB457.5CE",
+        "token": 12586754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB457.5PE",
+        "token": 12587010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 460,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB460CE",
+        "token": 32359426,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB460PE",
+        "token": 32359682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 464,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB464CE",
+        "token": 28559874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 465,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB465CE",
+        "token": 12588034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB465PE",
+        "token": 12588290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 468,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB468CE",
+        "token": 32359938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 470,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB470CE",
+        "token": 12589058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB470PE",
+        "token": 12589314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 475,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB475CE",
+        "token": 12590082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB475PE",
+        "token": 12590338,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 476,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB476CE",
+        "token": 32372482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 480,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB480CE",
+        "token": 28594690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB480PE",
+        "token": 28595202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 484,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB484CE",
+        "token": 32375810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 485,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB485CE",
+        "token": 12592386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB485PE",
+        "token": 12592642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 488,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB488CE",
+        "token": 28595458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 490,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB490CE",
+        "token": 12594178,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "KOTAKBANK26FEB490PE",
+        "token": 12595714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 496,
+      "ce": {
+        "tradingsymbol": "KOTAKBANK26FEB496CE",
+        "token": 28595970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

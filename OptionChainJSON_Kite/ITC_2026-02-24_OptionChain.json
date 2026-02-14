@@ -1,0 +1,2013 @@
+{
+  "underlying": "ITC",
+  "expiry": "2026-02-24",
+  "fetched_at_utc": "2026-02-13T18:56:49.519269+00:00",
+  "rows": [
+    {
+      "strike": 0,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 243,
+      "ce": {
+        "tradingsymbol": "ITC26FEB243.5CE",
+        "token": 27584770,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB243.5PE",
+        "token": 27586050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 248,
+      "ce": {
+        "tradingsymbol": "ITC26FEB248.5CE",
+        "token": 30455554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB248.5PE",
+        "token": 30455810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 250,
+      "ce": {
+        "tradingsymbol": "ITC26FEB250CE",
+        "token": 12758786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB250PE",
+        "token": 12759298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 253,
+      "ce": {
+        "tradingsymbol": "ITC26FEB253.5CE",
+        "token": 27586306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB253.5PE",
+        "token": 27586562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 255,
+      "ce": {
+        "tradingsymbol": "ITC26FEB255CE",
+        "token": 12760066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB255PE",
+        "token": 12760322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 258,
+      "ce": {
+        "tradingsymbol": "ITC26FEB258.5CE",
+        "token": 30502914,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB258.5PE",
+        "token": 30503682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 260,
+      "ce": {
+        "tradingsymbol": "ITC26FEB260CE",
+        "token": 12761090,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB260PE",
+        "token": 12762626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 263,
+      "ce": {
+        "tradingsymbol": "ITC26FEB263.5CE",
+        "token": 27586818,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB263.5PE",
+        "token": 27587074,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 265,
+      "ce": {
+        "tradingsymbol": "ITC26FEB265CE",
+        "token": 12763394,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB265PE",
+        "token": 12765186,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 268,
+      "ce": {
+        "tradingsymbol": "ITC26FEB268.5CE",
+        "token": 30508802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB268.5PE",
+        "token": 30509058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 270,
+      "ce": {
+        "tradingsymbol": "ITC26FEB270CE",
+        "token": 12765954,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB270PE",
+        "token": 12766210,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 273,
+      "ce": {
+        "tradingsymbol": "ITC26FEB273.5CE",
+        "token": 27587330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB273.5PE",
+        "token": 27598850,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 275,
+      "ce": {
+        "tradingsymbol": "ITC26FEB275CE",
+        "token": 12766978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB275PE",
+        "token": 12767234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 276,
+      "ce": {
+        "tradingsymbol": "ITC26FEB276CE",
+        "token": 9659650,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB276PE",
+        "token": 9659906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 278,
+      "ce": {
+        "tradingsymbol": "ITC26FEB278.5CE",
+        "token": 30510082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB278.5PE",
+        "token": 30511106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 280,
+      "ce": {
+        "tradingsymbol": "ITC26FEB280CE",
+        "token": 12768002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB280PE",
+        "token": 12768258,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 281,
+      "ce": {
+        "tradingsymbol": "ITC26FEB281CE",
+        "token": 9660674,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB281PE",
+        "token": 9660930,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 282,
+      "ce": {
+        "tradingsymbol": "ITC26FEB282.5CE",
+        "token": 12768514,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB282.5PE",
+        "token": 12768770,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 283,
+      "ce": {
+        "tradingsymbol": "ITC26FEB283.5CE",
+        "token": 27599106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB283.5PE",
+        "token": 27599362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 285,
+      "ce": {
+        "tradingsymbol": "ITC26FEB285CE",
+        "token": 12769026,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB285PE",
+        "token": 12769282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 286,
+      "ce": {
+        "tradingsymbol": "ITC26FEB286CE",
+        "token": 9661186,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB286PE",
+        "token": 9661442,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 287,
+      "ce": {
+        "tradingsymbol": "ITC26FEB287.5CE",
+        "token": 12769538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB287.5PE",
+        "token": 12769794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 288,
+      "ce": {
+        "tradingsymbol": "ITC26FEB288.5CE",
+        "token": 30511362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB288.5PE",
+        "token": 30511618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 290,
+      "ce": {
+        "tradingsymbol": "ITC26FEB290CE",
+        "token": 12770050,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB290PE",
+        "token": 12770306,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 291,
+      "ce": {
+        "tradingsymbol": "ITC26FEB291CE",
+        "token": 9661698,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB291PE",
+        "token": 9661954,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 292,
+      "ce": {
+        "tradingsymbol": "ITC26FEB292.5CE",
+        "token": 12770562,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB292.5PE",
+        "token": 12770818,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 293,
+      "ce": {
+        "tradingsymbol": "ITC26FEB293.5CE",
+        "token": 27599618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB293.5PE",
+        "token": 27599874,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 295,
+      "ce": {
+        "tradingsymbol": "ITC26FEB295CE",
+        "token": 12771074,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB295PE",
+        "token": 12771330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 296,
+      "ce": {
+        "tradingsymbol": "ITC26FEB296CE",
+        "token": 9663746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB296PE",
+        "token": 9664002,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 297,
+      "ce": {
+        "tradingsymbol": "ITC26FEB297.5CE",
+        "token": 12771586,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB297.5PE",
+        "token": 12771842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 298,
+      "ce": {
+        "tradingsymbol": "ITC26FEB298.5CE",
+        "token": 30512386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB298.5PE",
+        "token": 30512642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 300,
+      "ce": {
+        "tradingsymbol": "ITC26FEB300CE",
+        "token": 12772098,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB300PE",
+        "token": 12772354,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 301,
+      "ce": {
+        "tradingsymbol": "ITC26FEB301CE",
+        "token": 9665282,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB301PE",
+        "token": 9665538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 302,
+      "ce": {
+        "tradingsymbol": "ITC26FEB302.5CE",
+        "token": 12772610,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB302.5PE",
+        "token": 12772866,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 303,
+      "ce": {
+        "tradingsymbol": "ITC26FEB303.5CE",
+        "token": 27600130,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB303.5PE",
+        "token": 27600386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 305,
+      "ce": {
+        "tradingsymbol": "ITC26FEB305CE",
+        "token": 12773122,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB305PE",
+        "token": 12773378,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 306,
+      "ce": {
+        "tradingsymbol": "ITC26FEB306CE",
+        "token": 30512898,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB306PE",
+        "token": 30513154,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 307,
+      "ce": {
+        "tradingsymbol": "ITC26FEB307.5CE",
+        "token": 12773634,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB307.5PE",
+        "token": 12773890,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 308,
+      "ce": {
+        "tradingsymbol": "ITC26FEB308.5CE",
+        "token": 27600642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB308.5PE",
+        "token": 27610114,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 310,
+      "ce": {
+        "tradingsymbol": "ITC26FEB310CE",
+        "token": 12774146,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB310PE",
+        "token": 12774402,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 311,
+      "ce": {
+        "tradingsymbol": "ITC26FEB311CE",
+        "token": 30513410,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB311PE",
+        "token": 30513666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 312,
+      "ce": {
+        "tradingsymbol": "ITC26FEB312.5CE",
+        "token": 12774658,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB312.5PE",
+        "token": 12774914,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 313,
+      "ce": {
+        "tradingsymbol": "ITC26FEB313.5CE",
+        "token": 27610370,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB313.5PE",
+        "token": 27610626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 315,
+      "ce": {
+        "tradingsymbol": "ITC26FEB315CE",
+        "token": 12775170,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB315PE",
+        "token": 12775426,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 316,
+      "ce": {
+        "tradingsymbol": "ITC26FEB316CE",
+        "token": 30513922,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB316PE",
+        "token": 30514178,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 317,
+      "ce": {
+        "tradingsymbol": "ITC26FEB317.5CE",
+        "token": 12775682,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB317.5PE",
+        "token": 12775938,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 318,
+      "ce": {
+        "tradingsymbol": "ITC26FEB318.5CE",
+        "token": 27610882,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB318.5PE",
+        "token": 27611650,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 320,
+      "ce": {
+        "tradingsymbol": "ITC26FEB320CE",
+        "token": 12776194,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB320PE",
+        "token": 12776450,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 321,
+      "ce": {
+        "tradingsymbol": "ITC26FEB321CE",
+        "token": 30514434,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB321PE",
+        "token": 30515458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 322,
+      "ce": {
+        "tradingsymbol": "ITC26FEB322.5CE",
+        "token": 12776706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB322.5PE",
+        "token": 12776962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 323,
+      "ce": {
+        "tradingsymbol": "ITC26FEB323.5CE",
+        "token": 27611906,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB323.5PE",
+        "token": 27612162,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 325,
+      "ce": {
+        "tradingsymbol": "ITC26FEB325CE",
+        "token": 12777218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB325PE",
+        "token": 12777474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 326,
+      "ce": {
+        "tradingsymbol": "ITC26FEB326CE",
+        "token": 30515714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB326PE",
+        "token": 30517506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 327,
+      "ce": {
+        "tradingsymbol": "ITC26FEB327.5CE",
+        "token": 12778754,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB327.5PE",
+        "token": 12779010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 328,
+      "ce": {
+        "tradingsymbol": "ITC26FEB328.5CE",
+        "token": 27614466,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB328.5PE",
+        "token": 27614722,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 330,
+      "ce": {
+        "tradingsymbol": "ITC26FEB330CE",
+        "token": 12779778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB330PE",
+        "token": 12780034,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 331,
+      "ce": {
+        "tradingsymbol": "ITC26FEB331CE",
+        "token": 30517762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB331PE",
+        "token": 30518018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 332,
+      "ce": {
+        "tradingsymbol": "ITC26FEB332.5CE",
+        "token": 12780290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB332.5PE",
+        "token": 12780546,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 333,
+      "ce": {
+        "tradingsymbol": "ITC26FEB333.5CE",
+        "token": 27619074,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB333.5PE",
+        "token": 27619330,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 335,
+      "ce": {
+        "tradingsymbol": "ITC26FEB335CE",
+        "token": 12780802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB335PE",
+        "token": 12781058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 336,
+      "ce": {
+        "tradingsymbol": "ITC26FEB336CE",
+        "token": 30518274,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB336PE",
+        "token": 30518530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 337,
+      "ce": {
+        "tradingsymbol": "ITC26FEB337.5CE",
+        "token": 12781314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB337.5PE",
+        "token": 12781570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 338,
+      "ce": {
+        "tradingsymbol": "ITC26FEB338.5CE",
+        "token": 27624706,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB338.5PE",
+        "token": 27624962,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 340,
+      "ce": {
+        "tradingsymbol": "ITC26FEB340CE",
+        "token": 12781826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB340PE",
+        "token": 12782082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 341,
+      "ce": {
+        "tradingsymbol": "ITC26FEB341CE",
+        "token": 30518786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB341PE",
+        "token": 30519042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 342,
+      "ce": {
+        "tradingsymbol": "ITC26FEB342.5CE",
+        "token": 12783106,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB342.5PE",
+        "token": 12783362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 343,
+      "ce": {
+        "tradingsymbol": "ITC26FEB343.5CE",
+        "token": 27625218,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB343.5PE",
+        "token": 27625474,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 345,
+      "ce": {
+        "tradingsymbol": "ITC26FEB345CE",
+        "token": 12784386,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB345PE",
+        "token": 12784642,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 346,
+      "ce": {
+        "tradingsymbol": "ITC26FEB346CE",
+        "token": 30519298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB346PE",
+        "token": 30519554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 347,
+      "ce": {
+        "tradingsymbol": "ITC26FEB347.5CE",
+        "token": 12786434,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB347.5PE",
+        "token": 12786690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 348,
+      "ce": {
+        "tradingsymbol": "ITC26FEB348.5CE",
+        "token": 27660802,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB348.5PE",
+        "token": 27661058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 350,
+      "ce": {
+        "tradingsymbol": "ITC26FEB350CE",
+        "token": 12786946,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB350PE",
+        "token": 12787202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 351,
+      "ce": {
+        "tradingsymbol": "ITC26FEB351CE",
+        "token": 30519810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB351PE",
+        "token": 30520066,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 352,
+      "ce": {
+        "tradingsymbol": "ITC26FEB352.5CE",
+        "token": 12787458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB352.5PE",
+        "token": 12787714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 353,
+      "ce": {
+        "tradingsymbol": "ITC26FEB353.5CE",
+        "token": 27661314,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB353.5PE",
+        "token": 27661570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 355,
+      "ce": {
+        "tradingsymbol": "ITC26FEB355CE",
+        "token": 12787970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB355PE",
+        "token": 12788226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 356,
+      "ce": {
+        "tradingsymbol": "ITC26FEB356CE",
+        "token": 30520322,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 357,
+      "ce": {
+        "tradingsymbol": "ITC26FEB357.5CE",
+        "token": 12788482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB357.5PE",
+        "token": 12788738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 358,
+      "ce": {
+        "tradingsymbol": "ITC26FEB358.5CE",
+        "token": 27661826,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB358.5PE",
+        "token": 27662082,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 360,
+      "ce": {
+        "tradingsymbol": "ITC26FEB360CE",
+        "token": 12788994,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB360PE",
+        "token": 12789250,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 361,
+      "ce": {
+        "tradingsymbol": "ITC26FEB361CE",
+        "token": 30521346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 362,
+      "ce": {
+        "tradingsymbol": "ITC26FEB362.5CE",
+        "token": 12789506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB362.5PE",
+        "token": 12789762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 363,
+      "ce": {
+        "tradingsymbol": "ITC26FEB363.5CE",
+        "token": 27676674,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB363.5PE",
+        "token": 27676930,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 365,
+      "ce": {
+        "tradingsymbol": "ITC26FEB365CE",
+        "token": 12790018,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB365PE",
+        "token": 12790274,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 366,
+      "ce": {
+        "tradingsymbol": "ITC26FEB366CE",
+        "token": 30521858,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 367,
+      "ce": {
+        "tradingsymbol": "ITC26FEB367.5CE",
+        "token": 12791042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB367.5PE",
+        "token": 12791298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 368,
+      "ce": {
+        "tradingsymbol": "ITC26FEB368.5CE",
+        "token": 27678978,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB368.5PE",
+        "token": 27679234,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 370,
+      "ce": {
+        "tradingsymbol": "ITC26FEB370CE",
+        "token": 12791554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB370PE",
+        "token": 12791810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 371,
+      "ce": {
+        "tradingsymbol": "ITC26FEB371CE",
+        "token": 30531842,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 373,
+      "ce": {
+        "tradingsymbol": "ITC26FEB373.5CE",
+        "token": 27679490,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB373.5PE",
+        "token": 27679746,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 375,
+      "ce": {
+        "tradingsymbol": "ITC26FEB375CE",
+        "token": 12793346,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB375PE",
+        "token": 12793602,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 376,
+      "ce": {
+        "tradingsymbol": "ITC26FEB376CE",
+        "token": 30537986,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB376PE",
+        "token": 30538242,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 378,
+      "ce": {
+        "tradingsymbol": "ITC26FEB378.5CE",
+        "token": 27681538,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB378.5PE",
+        "token": 27681794,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 380,
+      "ce": {
+        "tradingsymbol": "ITC26FEB380CE",
+        "token": 12794370,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB380PE",
+        "token": 12794626,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 381,
+      "ce": {
+        "tradingsymbol": "ITC26FEB381CE",
+        "token": 30538498,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 383,
+      "ce": {
+        "tradingsymbol": "ITC26FEB383.5CE",
+        "token": 27691010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB383.5PE",
+        "token": 27691266,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 385,
+      "ce": {
+        "tradingsymbol": "ITC26FEB385CE",
+        "token": 12795394,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB385PE",
+        "token": 12795650,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 386,
+      "ce": {
+        "tradingsymbol": "ITC26FEB386CE",
+        "token": 30539010,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB386PE",
+        "token": 30539266,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 388,
+      "ce": {
+        "tradingsymbol": "ITC26FEB388.5CE",
+        "token": 27693058,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB388.5PE",
+        "token": 27693570,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 391,
+      "ce": {
+        "tradingsymbol": "ITC26FEB391CE",
+        "token": 30539522,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB391PE",
+        "token": 30539778,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 393,
+      "ce": {
+        "tradingsymbol": "ITC26FEB393.5CE",
+        "token": 27695362,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB393.5PE",
+        "token": 27695618,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 396,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB396PE",
+        "token": 30540290,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 398,
+      "ce": {
+        "tradingsymbol": "ITC26FEB398.5CE",
+        "token": 27696898,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB398.5PE",
+        "token": 27697154,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 401,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB401PE",
+        "token": 30551042,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 403,
+      "ce": {
+        "tradingsymbol": "ITC26FEB403.5CE",
+        "token": 27697410,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB403.5PE",
+        "token": 27697666,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 406,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB406PE",
+        "token": 30554370,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 408,
+      "ce": {
+        "tradingsymbol": "ITC26FEB408.5CE",
+        "token": 27697922,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB408.5PE",
+        "token": 27698178,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 413,
+      "ce": {
+        "tradingsymbol": "ITC26FEB413.5CE",
+        "token": 27698434,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB413.5PE",
+        "token": 27698690,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 418,
+      "ce": {
+        "tradingsymbol": "ITC26FEB418.5CE",
+        "token": 27698946,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB418.5PE",
+        "token": 27699202,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 423,
+      "ce": {
+        "tradingsymbol": "ITC26FEB423.5CE",
+        "token": 27699458,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB423.5PE",
+        "token": 27699714,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 428,
+      "ce": {
+        "tradingsymbol": "ITC26FEB428.5CE",
+        "token": 27699970,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB428.5PE",
+        "token": 27700226,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 433,
+      "ce": {
+        "tradingsymbol": "ITC26FEB433.5CE",
+        "token": 27700482,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB433.5PE",
+        "token": 27700738,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 438,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB438.5PE",
+        "token": 27701250,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 443,
+      "ce": {
+        "tradingsymbol": "ITC26FEB443.5CE",
+        "token": 27701506,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB443.5PE",
+        "token": 27701762,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 453,
+      "ce": {
+        "tradingsymbol": "ITC26FEB453.5CE",
+        "token": 27702530,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB453.5PE",
+        "token": 27702786,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 458,
+      "ce": {
+        "tradingsymbol": null,
+        "token": null,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB458.5PE",
+        "token": 27703298,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    },
+    {
+      "strike": 463,
+      "ce": {
+        "tradingsymbol": "ITC26FEB463.5CE",
+        "token": 27703554,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      },
+      "pe": {
+        "tradingsymbol": "ITC26FEB463.5PE",
+        "token": 27703810,
+        "ltp": null,
+        "oi": null,
+        "volume": null
+      }
+    }
+  ]
+}

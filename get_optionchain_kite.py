@@ -22,6 +22,7 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Optional, Any
 from datetime import datetime, timezone, timedelta
+from dotenv import load_dotenv
 
 # Configure logger (simple, safe to reuse)
 logger = logging.getLogger("optionchain_kite")
@@ -118,7 +119,8 @@ def group_option_chain_by_expiry(instruments: List[Dict[str, Any]], underlying: 
     ux = (underlying or "").upper()
     for inst in instruments:
         try:
-            if (inst.get("instrument_type") or "").upper() != "OPT":
+            # Accept option and future instrument types returned by KiteConnect
+            if (inst.get("instrument_type") or "").upper() not in {"OPT", "CE", "PE", "FUT"}:
                 continue
             name = (inst.get("name") or "").upper()
             if name != ux:
@@ -127,7 +129,10 @@ def group_option_chain_by_expiry(instruments: List[Dict[str, Any]], underlying: 
             if not expiry:
                 continue
             strike = int(float(inst.get("strike", 0)))
-            opt_type = (inst.get("option_type") or "").upper()
+            # Some Kite instrument entries have 'instrument_type' set to 'CE'/'PE' and
+            # may not populate 'option_type'. Prefer 'option_type' but fall back to
+            # 'instrument_type' for CE/PE values.
+            opt_type = (inst.get("option_type") or inst.get("instrument_type") or "").upper()
             if expiry not in out:
                 out[expiry] = {}
             if strike not in out[expiry]:
@@ -209,7 +214,7 @@ def save_option_chain_json(out_dir: Path, underlying: str, expiry: str, chain: D
         })
     payload = {
         "underlying": underlying,
-        "expiry": expiry,
+        "expiry": str(expiry),
         "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
         "rows": rows,
     }
@@ -229,15 +234,53 @@ def save_option_chain_json(out_dir: Path, underlying: str, expiry: str, chain: D
 def main(api_key: Optional[str] = None,
          access_token: Optional[str] = None,
          out_base: Optional[Path] = None,
-         top_n: int = 50):
+         top_n: int = 50,
+         creds_file: Optional[Path] = None):
     if KiteConnect is None:
         logger.error("kiteconnect not installed. Install via: pip install kiteconnect")
         return
 
+    # Load .env like kite_live.py does, so users can store KITE_API_KEY there
+    try:
+        load_dotenv()
+    except Exception:
+        pass
+
+    # Credential precedence: explicit args > creds_file > session file > environment
+    api_key = api_key or None
+    access_token = access_token or None
+
+    if creds_file:
+        try:
+            cf = Path(creds_file).expanduser()
+            if cf.exists():
+                cfg = json.loads(cf.read_text(encoding='utf8'))
+                if not api_key:
+                    api_key = cfg.get('api_key') or cfg.get('KITE_API_KEY')
+                if not access_token:
+                    access_token = cfg.get('access_token') or cfg.get('KITE_ACCESS_TOKEN')
+            else:
+                logger.warning("Credentials file %s not found, falling back to env vars", cf)
+        except Exception as e:
+            logger.warning("Failed to read credentials file %s: %s", creds_file, e)
+
     api_key = api_key or os.environ.get("KITE_API_KEY")
     access_token = access_token or os.environ.get("KITE_ACCESS_TOKEN")
+    # If still missing, try to read saved session like kite_live.py (~/.kite_session.json)
+    if (not api_key or not access_token):
+        try:
+            session_path = os.path.expanduser("~/.kite_session.json")
+            if os.path.exists(session_path):
+                with open(session_path, "r", encoding="utf8") as f:
+                    s = json.load(f)
+                if not access_token:
+                    access_token = s.get("access_token")
+                if not api_key:
+                    api_key = s.get("api_key") or s.get("KITE_API_KEY")
+        except Exception:
+            pass
     if not api_key or not access_token:
-        logger.error("API key and access token required (args or env KITE_API_KEY / KITE_ACCESS_TOKEN)")
+        logger.error("API key and access token required (args, creds file, session, or env KITE_API_KEY / KITE_ACCESS_TOKEN)")
         return
 
     kite = KiteConnect(api_key=api_key)
@@ -314,7 +357,9 @@ if __name__ == "__main__":
     parser.add_argument("--access-token", help="Kite access token (or set KITE_ACCESS_TOKEN)")
     parser.add_argument("--out-dir", help="Output folder (defaults to trading_app/OptionChainJSON_Kite)")
     parser.add_argument("--top-n", type=int, default=50, help="Number of symbols to fetch from helper")
+    parser.add_argument("--creds-file", help="Path to JSON credentials file containing api_key and access_token")
     args = parser.parse_args()
 
     out_dir = Path(args.out_dir) if args.out_dir else None
-    main(api_key=args.api_key, access_token=args.access_token, out_base=out_dir, top_n=args.top_n)
+    creds = Path(args.creds_file) if args.creds_file else None
+    main(api_key=args.api_key, access_token=args.access_token, out_base=out_dir, top_n=args.top_n, creds_file=creds)
